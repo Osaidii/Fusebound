@@ -869,6 +869,7 @@ offset_top = 195.0
 offset_right = -89.0
 offset_bottom = 211.0
 scale = Vector2(2.15, 2.15)
+focus_neighbor_left = NodePath("../Back")
 focus_neighbor_right = NodePath("../Create")
 focus_neighbor_bottom = NodePath("../Back")
 focus_next = NodePath("../Create")

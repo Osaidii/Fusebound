@@ -129,11 +129,6 @@ right6={
 ]
 }
 
-[layer_names]
-
-2d_physics/layer_1="Collisions"
-2d_physics/layer_2="Hitboxes"
-
 [physics]
 
 3d/physics_engine="Jolt Physics"

@@ -23,6 +23,13 @@ const PLAYER = preload("uid://ct1ysgutbxa0y")
 @onready var outfit_5: AnimatedSprite2D = $"HUD/Outfit 5"
 @onready var outfit_6: AnimatedSprite2D = $"HUD/Outfit 6"
 @onready var timer: Label = $HUD/Timer
+@onready var winner_title: Sprite2D = $HUD/Winner
+@onready var w_1: Node2D = $"HUD/Winner/1"
+@onready var w_2: Node2D = $"HUD/Winner/2"
+@onready var w_3: Node2D = $"HUD/Winner/3"
+@onready var w_4: Node2D = $"HUD/Winner/4"
+@onready var w_5: Node2D = $"HUD/Winner/5"
+@onready var w_6: Node2D = $"HUD/Winner/6"
 
 var player1: Player
 var player2: Player
@@ -58,6 +65,9 @@ func random_bomb() -> void:
 	outfit_4.visible = false
 	outfit_5.visible = false
 	outfit_6.visible = false
+	for p in living:
+		if p != null:
+			p.IS_TAGGER = false
 	chosen.IS_TAGGER = true
 	if chosen == player1: outfit_1.visible = true
 	elif chosen == player2: outfit_2.visible = true
@@ -86,26 +96,41 @@ func _on_start_pressed() -> void:
 
 func show_winner() -> void:
 	bomb_on.visible = false
+	timer.visible = false
+	outfit_1.visible = false
+	outfit_2.visible = false
+	outfit_3.visible = false
+	outfit_4.visible = false
+	outfit_5.visible = false
+	outfit_6.visible = false
 	death_timer.stop()
+	w_1.visible = false
+	w_2.visible = false
+	w_3.visible = false
+	w_4.visible = false
+	w_5.visible = false
+	w_6.visible = false
 	if player1 != null:
 		winner = player1
+		w_1.visible = true
 	elif player2 != null:
 		winner = player2
+		w_1.visible = true
 	elif player3 != null:
 		winner = player3
+		w_1.visible = true
 	elif player4 != null:
 		winner = player4
+		w_1.visible = true
 	elif player5 != null:
 		winner = player5
+		w_1.visible = true
 	elif player6 != null:
 		winner = player6
-	# Add showing winne here
+		w_1.visible = true
+	winner_title.visible = true
 	await get_tree().create_timer(10.0).timeout
-	Transition.scene_out()
-	await get_tree().create_timer(1.3).timeout
 	match_end()
-	match_making.visible = true
-	Transition.scene_in()
 
 # This function starts the match and does the countdown.
 func start_match() -> void:
@@ -196,6 +221,7 @@ func match_end():
 	Transition.scene_in()
 	start.grab_focus()
 	winner = null
+	winner_title.visible = false
 
 # This function arranges the UI when a third player is added.
 func _on_add_3_pressed() -> void:
@@ -311,7 +337,7 @@ func _on_remove_6_pressed() -> void:
 	_3.get_child(3).focus_neighbor_bottom = _6.get_child(2).get_path()
 
 func _on_death_timer_timeout() -> void:
-	if players_alive <= 1:
+	if players_alive - 1 <= 1:
 		show_winner()
 		return
 	var player: Player

@@ -14,6 +14,7 @@ extends CharacterBody2D
 
 @onready var coyote_timer: Timer = $"Coyote Timer"
 @onready var jump_buffer_timer: Timer = $"Jump Buffer timer"
+@onready var hitbox_cooldown_timer: Timer = $"Hitbox Cooldown Timer"
 @onready var outfit_1: AnimatedSprite2D = $"Outfit 1"
 @onready var outfit_2: AnimatedSprite2D = $"Outfit 2"
 @onready var outfit_3: AnimatedSprite2D = $"Outfit 3"
@@ -26,7 +27,7 @@ var animation: AnimatedSprite2D
 var direction := 0.0
 var coyote_time_activated := false
 var jump_buffer := false
-var hitbox_activated := false
+var hitbox_on_cooldown := false
 
 # This function sets the player up.
 func _ready() -> void:
@@ -179,9 +180,11 @@ func jump() -> void:
 
 func _on_hitbox_checker_body_entered(body: Node2D) -> void:
 	if body is Player:
-		if hitbox_activated:
+		print("here" + str(OUTFIT))
+		if hitbox_on_cooldown:
 			return
-		hitbox_activated = true
+		hitbox_on_cooldown = true
+		hitbox_cooldown_timer.start()
 		if !self.IS_TAGGER:
 			IS_TAGGER = true
 			body.IS_TAGGER = false
@@ -189,6 +192,5 @@ func _on_hitbox_checker_body_entered(body: Node2D) -> void:
 			IS_TAGGER = false
 			body.IS_TAGGER = true
 
-func _on_hitbox_checker_body_exited(body: Node2D) -> void:
-	if body is Player:
-		hitbox_activated = false
+func _on_hitbox_cooldown_timer_timeout() -> void:
+	hitbox_on_cooldown = false

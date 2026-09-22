@@ -950,6 +950,9 @@ one_shot = true
 wait_time = 0.1
 one_shot = true
 
+[node name="Hitbox Cooldown Timer" type="Timer" parent="." unique_id=728424113]
+wait_time = 0.5
+
 [node name="Hitbox" type="Area2D" parent="." unique_id=1513578620]
 collision_layer = 2
 collision_mask = 0
@@ -968,5 +971,6 @@ visible = false
 position = Vector2(-0.43999767, 0.55999947)
 shape = SubResource("RectangleShape2D_k1lxp")
 
+[connection signal="timeout" from="Hitbox Cooldown Timer" to="." method="_on_hitbox_cooldown_timer_timeout"]
 [connection signal="body_entered" from="Hitbox Checker" to="." method="_on_hitbox_checker_body_entered"]
 [connection signal="body_exited" from="Hitbox Checker" to="." method="_on_hitbox_checker_body_exited"]

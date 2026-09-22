@@ -40,6 +40,7 @@
 [ext_resource type="Texture2D" uid="uid://b1um7jscwjtd3" path="res://assets/titles/yellow light.png" id="38_1mdks"]
 [ext_resource type="Texture2D" uid="uid://ipt35rbtfgq4" path="res://assets/titles/green light.png" id="39_gbx8y"]
 [ext_resource type="Texture2D" uid="uid://b8vloxgd4ak6p" path="res://assets/titles/Bomb is on.png" id="40_1mdks"]
+[ext_resource type="Texture2D" uid="uid://bhxvuvj6ipb0j" path="res://assets/titles/winner.png" id="41_gbx8y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
 atlas = ExtResource("11_r17nh")
@@ -2556,6 +2557,107 @@ theme_override_fonts/font = ExtResource("36_lqmox")
 theme_override_font_sizes/font_size = 60
 text = "25"
 horizontal_alignment = 2
+
+[node name="Winner" type="Sprite2D" parent="HUD" unique_id=1644423076]
+visible = false
+position = Vector2(320, 180)
+texture = ExtResource("41_gbx8y")
+
+[node name="1" type="Node2D" parent="HUD/Winner" unique_id=1141964210]
+visible = false
+position = Vector2(0, 28.46)
+
+[node name="Outfit 1" type="AnimatedSprite2D" parent="HUD/Winner/1" unique_id=1883614147]
+position = Vector2(-0.43999767, -1.4400005)
+scale = Vector2(3.055, 3.055)
+sprite_frames = SubResource("SpriteFrames_3cemj")
+animation = &"jump"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="HUD/Winner/1" unique_id=539253431]
+position = Vector2(-0.48426148, -39.514977)
+scale = Vector2(1.105, 1.105)
+texture = ExtResource("24_y2fpn")
+
+[node name="2" type="Node2D" parent="HUD/Winner" unique_id=293248703]
+visible = false
+position = Vector2(0, 28.46)
+
+[node name="Outfit 2" type="AnimatedSprite2D" parent="HUD/Winner/2" unique_id=1697641968]
+position = Vector2(0.9999949, 6.54001)
+scale = Vector2(3.7, 3.7)
+sprite_frames = SubResource("SpriteFrames_p36xy")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="HUD/Winner/2" unique_id=2035228779]
+position = Vector2(-0.48426148, -39.514977)
+scale = Vector2(1.105, 1.105)
+texture = ExtResource("25_hup1r")
+
+[node name="3" type="Node2D" parent="HUD/Winner" unique_id=1744378655]
+visible = false
+position = Vector2(0, 28.46)
+
+[node name="Outfit 3" type="AnimatedSprite2D" parent="HUD/Winner/3" unique_id=332470662]
+position = Vector2(-2, 10.540012)
+scale = Vector2(2.59, 2.59)
+sprite_frames = SubResource("SpriteFrames_47ed3")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="HUD/Winner/3" unique_id=2143497789]
+position = Vector2(-0.48426148, -39.514977)
+scale = Vector2(1.105, 1.105)
+texture = ExtResource("26_w3w8l")
+
+[node name="4" type="Node2D" parent="HUD/Winner" unique_id=450878768]
+visible = false
+position = Vector2(0, 28.46)
+
+[node name="Outfit 4" type="AnimatedSprite2D" parent="HUD/Winner/4" unique_id=1507236108]
+position = Vector2(0, -1)
+scale = Vector2(4.355, 4.355)
+sprite_frames = SubResource("SpriteFrames_3v5kv")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="HUD/Winner/4" unique_id=331051202]
+position = Vector2(-0.48426148, -39.514977)
+scale = Vector2(1.105, 1.105)
+texture = ExtResource("30_6f51d")
+
+[node name="5" type="Node2D" parent="HUD/Winner" unique_id=926352571]
+visible = false
+position = Vector2(0, 28.46)
+
+[node name="Outfit 5" type="AnimatedSprite2D" parent="HUD/Winner/5" unique_id=557482366]
+position = Vector2(-0.9999961, 8.540012)
+scale = Vector2(3.485, 3.485)
+sprite_frames = SubResource("SpriteFrames_2xi81")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="HUD/Winner/5" unique_id=1025598321]
+position = Vector2(-0.48426148, -39.514977)
+scale = Vector2(1.105, 1.105)
+texture = ExtResource("31_bdx22")
+
+[node name="6" type="Node2D" parent="HUD/Winner" unique_id=1329990781]
+visible = false
+position = Vector2(0, 28.46)
+
+[node name="Outfit 6" type="AnimatedSprite2D" parent="HUD/Winner/6" unique_id=984475411]
+position = Vector2(-0.9999924, 7.5400124)
+scale = Vector2(4.26, 4.26)
+sprite_frames = SubResource("SpriteFrames_r17nh")
+animation = &"run"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="HUD/Winner/6" unique_id=229554413]
+position = Vector2(-0.48426148, -39.514977)
+scale = Vector2(1.105, 1.105)
+texture = ExtResource("32_2maol")
 
 [node name="Death Timer" type="Timer" parent="." unique_id=2077930211]
 wait_time = 25.0
