@@ -9,20 +9,255 @@
 [ext_resource type="Texture2D" uid="uid://ctfw0202p0dnc" path="res://assets/buttons/play pressed.png" id="6_1xahd"]
 [ext_resource type="Texture2D" uid="uid://b0n2ff6abdoi3" path="res://assets/buttons/exit.png" id="6_c1qw6"]
 [ext_resource type="Texture2D" uid="uid://ey1q0sww4oq1" path="res://assets/buttons/play hover.png" id="7_8s3t8"]
-[ext_resource type="Texture2D" uid="uid://cyqhk658olggm" path="res://assets/buttons/create.png" id="8_4w47j"]
 [ext_resource type="Texture2D" uid="uid://dtdxjjdafrl3b" path="res://assets/buttons/back.png" id="8_fak3k"]
-[ext_resource type="Texture2D" uid="uid://cx8538ih7d0im" path="res://assets/buttons/join.png" id="9_c1qw6"]
 [ext_resource type="Texture2D" uid="uid://di0adfsv3mrue" path="res://assets/buttons/settings pressed.png" id="9_wetyc"]
 [ext_resource type="Texture2D" uid="uid://bfeyad0sp2i73" path="res://assets/buttons/settings hover.png" id="10_e37nt"]
 [ext_resource type="Texture2D" uid="uid://csnbn88d7w46c" path="res://assets/buttons/exit pressed.png" id="13_csewp"]
 [ext_resource type="Texture2D" uid="uid://bsi351viqt2ev" path="res://assets/buttons/exit hover.png" id="14_i07pi"]
-[ext_resource type="Texture2D" uid="uid://ct06cn0m5jm4k" path="res://assets/buttons/create pressed.png" id="16_dwdy1"]
-[ext_resource type="Texture2D" uid="uid://drvkpq4wx83kj" path="res://assets/buttons/create hover.png" id="17_g8w3l"]
-[ext_resource type="Texture2D" uid="uid://chqvah2kys07n" path="res://assets/buttons/join pressed.png" id="19_h7arf"]
-[ext_resource type="Texture2D" uid="uid://bb0our2e6d4ms" path="res://assets/buttons/join hover.png" id="20_xc68h"]
 [ext_resource type="Texture2D" uid="uid://djokrwtcfgbjc" path="res://assets/buttons/back pressed.png" id="23_tdh66"]
 [ext_resource type="Texture2D" uid="uid://b7yimwsaymn38" path="res://assets/buttons/back hover.png" id="24_qjc1h"]
 [ext_resource type="FontFile" uid="uid://cmnkdnb8mttwc" path="res://assets/fonts/monogram.ttf" id="25_8s3t8"]
+
+[sub_resource type="Animation" id="Animation_oy07q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Title:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(322.575, 97)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Buttons/Play:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(219.57501, 203)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Buttons/Settings:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.001),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(224.29, 261.98), Vector2(224.29, 261.98)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Buttons/Exit:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(262.57495, 300)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Buttons/Back:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-55, 301)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Messages/Error:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(104, 363)]
+}
+
+[sub_resource type="Animation" id="Animation_fak3k"]
+resource_name = "back"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Title:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.26666665, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(322.575, -67.8), Vector2(322.575, 97)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Buttons/Play:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.26666665, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(219.57501, 399), Vector2(219.57501, 203)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Buttons/Settings:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.26666665, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(224, 456), Vector2(224.29, 261.98)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Buttons/Exit:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.26666665, 0.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(262.57495, 496.00003), Vector2(262.57495, 300)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Buttons/Back:position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.2, 0.56666666),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(18, 301), Vector2(-55, 301)]
+}
+
+[sub_resource type="Animation" id="Animation_4w47j"]
+resource_name = "create"
+
+[sub_resource type="Animation" id="Animation_8s3t8"]
+resource_name = "error"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Messages/Error:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.99),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(97, 104), Vector2(97, 238)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Messages/Error:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_c1qw6"]
+resource_name = "settings"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Background/Title:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(322.575, 97), Vector2(322.575, -67.8)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Buttons/Play:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(219.57501, 203), Vector2(219.57501, 399)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Buttons/Settings:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(224.29, 261.98), Vector2(224, 456)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Buttons/Exit:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(262.57495, 300), Vector2(262.57495, 496.00003)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Buttons/Back:position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.56666666, 1.1666666),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-55, 301), Vector2(18, 301)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fak3k"]
+_data = {
+&"RESET": SubResource("Animation_oy07q"),
+&"back": SubResource("Animation_fak3k"),
+&"create": SubResource("Animation_4w47j"),
+&"error": SubResource("Animation_8s3t8"),
+&"settings": SubResource("Animation_c1qw6")
+}
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_km7eu"]
 texture = ExtResource("2_12vek")
@@ -430,384 +665,55 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_oy07q")
 sources/1 = SubResource("TileSetAtlasSource_c1qw6")
 
-[sub_resource type="Animation" id="Animation_oy07q"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Title:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(322.575, 97)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Play:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(219.57501, 203)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Settings:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.001),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(224.29, 261.98), Vector2(224.29, 261.98)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Exit:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(262.57495, 300)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Create:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(666, 196)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Join:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0.001),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-149, 195)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("Back:position")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-55, 301)]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("Messages/Join Error:position")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(104, 363)]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("Messages/Settings Error:position")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(104, 363)]
-}
-
-[sub_resource type="Animation" id="Animation_fak3k"]
-resource_name = "back"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Title:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.26666665, 0.9),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(322.575, -67.8), Vector2(322.575, 97)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Play:position")
-tracks/1/interp = 2
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.26666665, 0.9),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(219.57501, 399), Vector2(219.57501, 203)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Settings:position")
-tracks/2/interp = 2
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.26666665, 0.9),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(224, 456), Vector2(224.29, 261.98)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Exit:position")
-tracks/3/interp = 2
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0.26666665, 0.9),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(262.57495, 496.00003), Vector2(262.57495, 300)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Create:position")
-tracks/4/interp = 2
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0.03333336, 0.8),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(403.32, 179.145), Vector2(666, 196)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Join:position")
-tracks/5/interp = 2
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0.03333336, 0.8),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(124, 179), Vector2(-149, 195)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("Back:position")
-tracks/6/interp = 2
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0.2, 0.56666666),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(18, 301), Vector2(-55, 301)]
-}
-
-[sub_resource type="Animation" id="Animation_4w47j"]
-resource_name = "create"
-
-[sub_resource type="Animation" id="Animation_8s3t8"]
-resource_name = "join error"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Messages/Join Error:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.99),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(97, 104), Vector2(104, 238)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Messages/Join Error:self_modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.3, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_c1qw6"]
-resource_name = "play"
-length = 1.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Title:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(322.575, 97), Vector2(322.575, -67.8)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Play:position")
-tracks/1/interp = 2
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(219.57501, 203), Vector2(219.57501, 399)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Settings:position")
-tracks/2/interp = 2
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(224.29, 261.98), Vector2(224, 456)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Exit:position")
-tracks/3/interp = 2
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(262.57495, 300), Vector2(262.57495, 496.00003)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Create:position")
-tracks/4/interp = 2
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0.36666667, 1.1666666),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(666, 196), Vector2(403.32, 179.145)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Join:position")
-tracks/5/interp = 2
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0.36666667, 1.1666666),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-149, 195), Vector2(124, 179)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("Back:position")
-tracks/6/interp = 2
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0.56666666, 1.1666666),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-55, 301), Vector2(18, 301)]
-}
-
-[sub_resource type="Animation" id="Animation_wetyc"]
-resource_name = "settings error"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Messages/Settings Error:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.99, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(87.49, 104), Vector2(87.49, 238), Vector2(97, 362.29)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Messages/Settings Error:self_modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.3, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_fak3k"]
-_data = {
-&"RESET": SubResource("Animation_oy07q"),
-&"back": SubResource("Animation_fak3k"),
-&"create": SubResource("Animation_4w47j"),
-&"join error": SubResource("Animation_8s3t8"),
-&"play": SubResource("Animation_c1qw6"),
-&"settings error": SubResource("Animation_wetyc")
-}
-
 [node name="MainMenu" type="Node2D" unique_id=625900902]
 script = ExtResource("1_5hgee")
 
-[node name="Sky" type="TileMapLayer" parent="." unique_id=152189789]
+[node name="Anims" type="AnimationPlayer" parent="." unique_id=19570868]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_fak3k")
+
+[node name="Background" type="Node2D" parent="." unique_id=375134264]
+
+[node name="Sky" type="TileMapLayer" parent="Background" unique_id=152189789]
 position = Vector2(380, -127)
 scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AAD4/wIAAAAAAAsAAAD4/wMAAAAAAAsAAAD4/wQAAAAAAAsAAAD4/wUAAAAAAAwAAAD4/wYAAAAAAA0AAAD4/wcAAAAAAA0AAAD4/wgAAAAAAA0AAAD4/wkAAAAAAA0AAAD5/wIAAAAAAAsAAAD5/wMAAAAAAAsAAAD5/wQAAAAAAAsAAAD5/wUAAAAAAAwAAAD5/wYAAAAAAA0AAAD5/wcAAAAAAA0AAAD5/wgAAAAAAA0AAAD5/wkAAAAAAA0AAAD6/wIAAAAAAAsAAAD6/wMAAAAAAAsAAAD6/wQAAAAAAAsAAAD6/wUAAAAAAAwAAAD6/wYAAAAAAA0AAAD6/wcAAAAAAA0AAAD6/wgAAAAAAA0AAAD6/wkAAAAAAA0AAAD7/wIAAAAAAAsAAAD7/wMAAAAAAAsAAAD7/wQAAAAAAAsAAAD7/wUAAAAAAAwAAAD7/wYAAAAAAA0AAAD7/wcAAAAAAA0AAAD7/wgAAAAAAA0AAAD7/wkAAAAAAA0AAAD8/wIAAAAAAAsAAAD8/wMAAAAAAAsAAAD8/wQAAAAAAAsAAAD8/wUAAAAAAAwAAAD8/wYAAAAAAA0AAAD8/wcAAAAAAA0AAAD8/wgAAAAAAA0AAAD8/wkAAAAAAA0AAAD9/wIAAAAAAAsAAAD9/wMAAAAAAAsAAAD9/wQAAAAAAAsAAAD9/wUAAAAAAAwAAAD9/wYAAAAAAA0AAAD9/wcAAAAAAA0AAAD9/wgAAAAAAA0AAAD9/wkAAAAAAA0AAAD+/wIAAAAAAAsAAAD+/wMAAAAAAAsAAAD+/wQAAAAAAAsAAAD+/wUAAAAAAAwAAAD+/wYAAAAAAA0AAAD+/wcAAAAAAA0AAAD+/wgAAAAAAA0AAAD+/wkAAAAAAA0AAAD//wIAAAAAAAsAAAD//wMAAAAAAAsAAAD//wQAAAAAAAsAAAD//wUAAAAAAAwAAAD//wYAAAAAAA0AAAD//wcAAAAAAA0AAAD//wkAAAAAAA0AAAAAAAIAAAAAAAsAAAAAAAMAAAAAAAsAAAAAAAQAAAAAAAsAAAAAAAUAAAAAAAwAAAAAAAYAAAAAAA0AAAAAAAcAAAAAAA0AAAAAAAgAAAAAAA0AAAAAAAkAAAAAAA0AAAABAAIAAAAAAAsAAAABAAMAAAAAAAsAAAABAAQAAAAAAAsAAAABAAUAAAAAAAwAAAABAAYAAAAAAA0AAAABAAcAAAAAAA0AAAABAAgAAAAAAA0AAAABAAkAAAAAAA0AAAACAAIAAAAAAAsAAAACAAMAAAAAAAsAAAACAAQAAAAAAAsAAAACAAUAAAAAAAwAAAACAAYAAAAAAA0AAAACAAcAAAAAAA0AAAACAAgAAAAAAA0AAAACAAkAAAAAAA0AAAADAAIAAAAAAAsAAAADAAMAAAAAAAsAAAADAAQAAAAAAAsAAAADAAUAAAAAAAwAAAADAAYAAAAAAA0AAAADAAcAAAAAAA0AAAADAAgAAAAAAA0AAAADAAkAAAAAAA0AAAAEAAIAAAAAAAsAAAAEAAMAAAAAAAsAAAAEAAQAAAAAAAsAAAAEAAUAAAAAAAwAAAAEAAYAAAAAAA0AAAAEAAcAAAAAAA0AAAAEAAgAAAAAAA0AAAAEAAkAAAAAAA0AAAAFAAIAAAAAAAsAAAAFAAMAAAAAAAsAAAAFAAQAAAAAAAsAAAAFAAUAAAAAAAwAAAAFAAYAAAAAAA0AAAAFAAcAAAAAAA0AAAAFAAgAAAAAAA0AAAAFAAkAAAAAAA0AAAD4/woAAAAAAA0AAAD5/woAAAAAAA0AAAD6/woAAAAAAA0AAAD7/woAAAAAAA0AAAD8/woAAAAAAA0AAAD9/woAAAAAAA0AAAD+/woAAAAAAA0AAAD//woAAAAAAA0AAAAAAAoAAAAAAA0AAAABAAoAAAAAAA0AAAACAAoAAAAAAA0AAAADAAoAAAAAAA0AAAAEAAoAAAAAAA0AAAAFAAoAAAAAAA0AAAD//wgAAAAAAA0AAAA=")
 tile_set = SubResource("TileSet_ljdde")
 
-[node name="Ground" type="TileMapLayer" parent="." unique_id=1297245953]
+[node name="Ground" type="TileMapLayer" parent="Background" unique_id=1297245953]
 position = Vector2(380, -127)
 scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AAD5/wgAAAAAAAAAAAD5/wkAAAAAAAEAAAD5/woAAAAAAAEAAAD6/wgAAAAAAAAAAAD7/wMAAAACAAUAAAD7/wcAAAAAAAAAAAD8/wIAAAADAAQAAAD8/wMAAAADAAUAAAD8/wUAAAADAAcAAAD8/wYAAAADAAgAAAD8/wcAAAAAAAAAAAD9/wIAAAAEAAQAAAD9/wMAAAAEAAUAAAD9/wQAAAAEAAYAAAD+/wIAAAAAAAAAAAD+/wMAAAAAAAEAAAD+/wgAAAABAAQAAAD+/woAAAAAAAEAAAD//wIAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAIAAAAAAAAAAAABAAMAAAAAAAEAAAABAAYAAAAAAAMAAAABAAcAAAAAAAQAAAABAAgAAAAAAAUAAAACAAIAAAAAAAAAAAACAAMAAAAAAAEAAAADAAIAAAAAAAAAAAADAAMAAAAAAAEAAAAFAAkAAAAAAAEAAAD4/wkAAAAAAAAAAAD4/woAAAAAAAEAAAD5/wQAAQABAAAAAAD6/wQAAQACAAAAAAD6/wkAAAAAAAEAAAD6/woAAAAAAAEAAAD7/wIAAAACAAQAAAD7/wQAAAACAAYAAAD7/wgAAAAAAAEAAAD7/wkAAAAAAAEAAAD7/woAAAAAAAEAAAD8/wQAAAADAAYAAAD8/wgAAAAAAAEAAAD8/wkAAAAAAAEAAAD8/woAAAAAAAEAAAD9/wkAAAAAAAAAAAD9/woAAAAAAAEAAAD+/wkAAAAAAAAAAAD//wMAAAAAAAEAAAD//wkAAAAAAAAAAAD//woAAAAAAAEAAAAAAAMAAAAAAAEAAAAAAAQAAAAAAAEAAAAAAAkAAAAAAAAAAAAAAAoAAAAAAAEAAAABAAQAAAAAAAEAAAABAAkAAAAAAAAAAAABAAoAAAAAAAEAAAACAAQAAAAAAAEAAAACAAkAAAAAAAAAAAACAAoAAAAAAAEAAAADAAQAAAAAAAEAAAADAAgAAAAAAAAAAAADAAkAAAAAAAEAAAADAAoAAAAAAAEAAAAEAAIAAAAAAAAAAAAEAAMAAAAAAAEAAAAEAAQAAAAAAAEAAAAEAAgAAAAAAAAAAAAEAAkAAAAAAAEAAAAEAAoAAAAAAAEAAAAFAAMAAAAAAAAAAAAFAAQAAAAAAAEAAAAFAAgAAAAAAAAAAAAFAAoAAAAAAAEAAAA=")
 tile_set = SubResource("TileSet_fak3k")
 
-[node name="Title" type="Sprite2D" parent="." unique_id=2048913141]
+[node name="Title" type="Sprite2D" parent="Background" unique_id=2048913141]
 position = Vector2(322.575, 97)
 scale = Vector2(3.61, 3.61)
 texture = ExtResource("4_oy07q")
 
-[node name="Play" type="TextureButton" parent="." unique_id=2025413651]
+[node name="Messages" type="Node2D" parent="." unique_id=763375319]
+
+[node name="Error" type="Label" parent="Messages" unique_id=980389287]
+offset_left = 104.0
+offset_top = 363.0
+offset_right = 601.0
+offset_bottom = 399.00018
+theme_override_colors/font_color = Color(1, 0, 0.12941177, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("25_8s3t8")
+theme_override_font_sizes/font_size = 44
+text = "You have encountered an error."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="Node2D" parent="." unique_id=1850309123]
+
+[node name="Play" type="TextureButton" parent="Buttons" unique_id=2025413651]
+unique_name_in_owner = true
 offset_left = 219.57501
 offset_top = 203.0
 offset_right = 287.575
-offset_bottom = 221.0
+offset_bottom = 221.00006
 scale = Vector2(2.785, 2.785)
 focus_neighbor_top = NodePath("../Exit")
 focus_neighbor_bottom = NodePath("../Settings")
@@ -818,10 +724,11 @@ texture_pressed = ExtResource("6_1xahd")
 texture_hover = ExtResource("7_8s3t8")
 texture_focused = ExtResource("7_8s3t8")
 
-[node name="Settings" type="TextureButton" parent="." unique_id=1153923682]
+[node name="Settings" type="TextureButton" parent="Buttons" unique_id=1153923682]
+unique_name_in_owner = true
 offset_left = 224.29
 offset_top = 261.98
-offset_right = 339.29028
+offset_right = 339.2901
 offset_bottom = 280.98
 scale = Vector2(1.58, 1.58)
 focus_neighbor_top = NodePath("../Play")
@@ -833,7 +740,8 @@ texture_pressed = ExtResource("9_wetyc")
 texture_hover = ExtResource("10_e37nt")
 texture_focused = ExtResource("10_e37nt")
 
-[node name="Exit" type="TextureButton" parent="." unique_id=1895337368]
+[node name="Exit" type="TextureButton" parent="Buttons" unique_id=1895337368]
+unique_name_in_owner = true
 offset_left = 262.57495
 offset_top = 300.0
 offset_right = 322.57495
@@ -848,87 +756,19 @@ texture_pressed = ExtResource("13_csewp")
 texture_hover = ExtResource("14_i07pi")
 texture_focused = ExtResource("14_i07pi")
 
-[node name="Create" type="TextureButton" parent="." unique_id=1524152053]
-offset_left = 666.0
-offset_top = 196.0
-offset_right = 731.0001
-offset_bottom = 212.0
-scale = Vector2(2.15, 2.15)
-focus_neighbor_left = NodePath("../Join")
-focus_neighbor_bottom = NodePath("../Back")
-focus_next = NodePath("../Back")
-focus_previous = NodePath("../Join")
-texture_normal = ExtResource("8_4w47j")
-texture_pressed = ExtResource("16_dwdy1")
-texture_hover = ExtResource("17_g8w3l")
-texture_focused = ExtResource("17_g8w3l")
-
-[node name="Join" type="TextureButton" parent="." unique_id=534245066]
-offset_left = -149.0
-offset_top = 195.0
-offset_right = -89.0
-offset_bottom = 211.0
-scale = Vector2(2.15, 2.15)
-focus_neighbor_left = NodePath("../Back")
-focus_neighbor_right = NodePath("../Create")
-focus_neighbor_bottom = NodePath("../Back")
-focus_next = NodePath("../Create")
-focus_previous = NodePath("../Back")
-texture_normal = ExtResource("9_c1qw6")
-texture_pressed = ExtResource("19_h7arf")
-texture_hover = ExtResource("20_xc68h")
-texture_focused = ExtResource("20_xc68h")
-
-[node name="Back" type="TextureButton" parent="." unique_id=1832629436]
+[node name="Back" type="TextureButton" parent="Buttons" unique_id=1832629436]
+unique_name_in_owner = true
 offset_left = -55.0
 offset_top = 301.0
 offset_right = -37.0
 offset_bottom = 319.00003
 scale = Vector2(2.3823528, 2.3823528)
-focus_neighbor_left = NodePath("../Join")
-focus_neighbor_top = NodePath("../Join")
-focus_neighbor_right = NodePath("../Create")
-focus_next = NodePath("../Join")
 texture_normal = ExtResource("8_fak3k")
 texture_pressed = ExtResource("23_tdh66")
 texture_hover = ExtResource("24_qjc1h")
 texture_focused = ExtResource("24_qjc1h")
 
-[node name="Anims" type="AnimationPlayer" parent="." unique_id=19570868]
-libraries/ = SubResource("AnimationLibrary_fak3k")
-
-[node name="Messages" type="Node2D" parent="." unique_id=763375319]
-
-[node name="Settings Error" type="Label" parent="Messages" unique_id=396760386]
-offset_left = 104.0
-offset_top = 363.0
-offset_right = 583.00055
-offset_bottom = 399.00003
-theme_override_colors/font_color = Color(1, 0, 0.12941177, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("25_8s3t8")
-theme_override_font_sizes/font_size = 44
-text = "Settings not Implemented Yet."
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Join Error" type="Label" parent="Messages" unique_id=980389287]
-self_modulate = Color(1, 1, 1, 0)
-offset_left = 104.0
-offset_top = 363.0
-offset_right = 583.00024
-offset_bottom = 399.00018
-theme_override_colors/font_color = Color(1, 0, 0.12941177, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("25_8s3t8")
-theme_override_font_sizes/font_size = 44
-text = "Joining not Implemented Yet."
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
-[connection signal="pressed" from="Create" to="." method="_on_create_pressed"]
-[connection signal="pressed" from="Join" to="." method="_on_join_pressed"]
-[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Buttons/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Buttons/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Buttons/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Buttons/Back" to="." method="_on_back_pressed"]

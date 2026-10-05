@@ -13,7 +13,6 @@ config_version=5
 config/name="Snowglobe"
 run/main_scene="uid://daof72gx7ckp5"
 config/features=PackedStringArray("4.7", "Mobile")
-config/icon="res://icon.svg"
 
 [audio]
 

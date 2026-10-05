@@ -1,16 +1,11 @@
 [gd_scene format=3 uid="uid://7ie6bfslefrk"]
 
 [ext_resource type="Script" uid="uid://rhprpq103x8b" path="res://scripts/music.gd" id="1_ibx2e"]
-[ext_resource type="AudioStream" uid="uid://dhddr7kk0gsd7" path="res://assets/music/1.mp3" id="2_3dw7u"]
-[ext_resource type="AudioStream" uid="uid://bs7x3xxicrodx" path="res://assets/music/2.ogg" id="3_154te"]
-[ext_resource type="AudioStream" uid="uid://ctph5ikqtkgmh" path="res://assets/music/3.ogg" id="4_b4vsj"]
-[ext_resource type="AudioStream" uid="uid://btbq7a8xssuao" path="res://assets/music/4.ogg" id="5_inoir"]
-[ext_resource type="AudioStream" uid="uid://cpbiyvryvt1xl" path="res://assets/music/5.ogg" id="6_b6yqm"]
-[ext_resource type="AudioStream" uid="uid://dd7p8jjkaub70" path="res://assets/music/6.ogg" id="7_h42cm"]
-[ext_resource type="AudioStream" uid="uid://bynqeqlkol85b" path="res://assets/music/7.ogg" id="8_p7e6x"]
-[ext_resource type="AudioStream" uid="uid://eabidt0t8acg" path="res://assets/music/8.ogg" id="9_y3f4e"]
-[ext_resource type="AudioStream" uid="uid://dqfp62ahb5qms" path="res://assets/music/9.ogg" id="10_ehdtx"]
-[ext_resource type="AudioStream" uid="uid://d1dms452p3dbr" path="res://assets/music/10.ogg" id="11_am004"]
+[ext_resource type="AudioStream" uid="uid://dhddr7kk0gsd7" path="res://assets/music/2.mp3" id="2_3dw7u"]
+[ext_resource type="AudioStream" uid="uid://bs7x3xxicrodx" path="res://assets/music/1.ogg" id="3_154te"]
+[ext_resource type="AudioStream" uid="uid://cpbiyvryvt1xl" path="res://assets/music/3.ogg" id="6_b6yqm"]
+[ext_resource type="AudioStream" uid="uid://bynqeqlkol85b" path="res://assets/music/4.ogg" id="8_p7e6x"]
+[ext_resource type="AudioStream" uid="uid://dqfp62ahb5qms" path="res://assets/music/5.ogg" id="10_ehdtx"]
 
 [node name="Music" type="Node" unique_id=398698313]
 script = ExtResource("1_ibx2e")
@@ -22,46 +17,22 @@ bus = &"Music"
 
 [node name="Music 2" type="AudioStreamPlayer" parent="." unique_id=1790471283]
 stream = ExtResource("2_3dw7u")
-volume_db = -3.0
+volume_db = -2.0
 bus = &"Music"
 
-[node name="Music 3" type="AudioStreamPlayer" parent="." unique_id=30359361]
-stream = ExtResource("4_b4vsj")
-volume_db = -10.0
-bus = &"Music"
-
-[node name="Music 4" type="AudioStreamPlayer" parent="." unique_id=651642471]
-stream = ExtResource("5_inoir")
-volume_db = -3.0
-bus = &"Music"
-
-[node name="Music 5" type="AudioStreamPlayer" parent="." unique_id=1299131931]
+[node name="Music 3" type="AudioStreamPlayer" parent="." unique_id=1299131931]
 stream = ExtResource("6_b6yqm")
-volume_db = -1.0
+volume_db = -7.0
 bus = &"Music"
 
-[node name="Music 6" type="AudioStreamPlayer" parent="." unique_id=1483385565]
-stream = ExtResource("7_h42cm")
-volume_db = -3.0
-bus = &"Music"
-
-[node name="Music 7" type="AudioStreamPlayer" parent="." unique_id=369394870]
+[node name="Music 4" type="AudioStreamPlayer" parent="." unique_id=369394870]
 stream = ExtResource("8_p7e6x")
-bus = &"Music"
-
-[node name="Music 8" type="AudioStreamPlayer" parent="." unique_id=336802741]
-stream = ExtResource("9_y3f4e")
 volume_db = -10.0
 bus = &"Music"
 
-[node name="Music 9" type="AudioStreamPlayer" parent="." unique_id=1641507597]
+[node name="Music 5" type="AudioStreamPlayer" parent="." unique_id=1641507597]
 stream = ExtResource("10_ehdtx")
 volume_db = -10.0
-bus = &"Music"
-
-[node name="Music 10" type="AudioStreamPlayer" parent="." unique_id=596667925]
-stream = ExtResource("11_am004")
-volume_db = -3.0
 bus = &"Music"
 
 [connection signal="finished" from="Music 1" to="." method="_on_music_finished"]
@@ -69,8 +40,3 @@ bus = &"Music"
 [connection signal="finished" from="Music 3" to="." method="_on_music_finished"]
 [connection signal="finished" from="Music 4" to="." method="_on_music_finished"]
 [connection signal="finished" from="Music 5" to="." method="_on_music_finished"]
-[connection signal="finished" from="Music 6" to="." method="_on_music_finished"]
-[connection signal="finished" from="Music 7" to="." method="_on_music_finished"]
-[connection signal="finished" from="Music 8" to="." method="_on_music_finished"]
-[connection signal="finished" from="Music 9" to="." method="_on_music_finished"]
-[connection signal="finished" from="Music 10" to="." method="_on_music_finished"]

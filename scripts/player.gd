@@ -7,78 +7,36 @@ extends CharacterBody2D
 @export_category("Stats")
 @export var NORMAL_SPEED := 110
 @export var TAGGER_SPEED := 140
-@export var JUMP_VELOCITY = -240.0
+@export var JUMP_VELOCITY := -240.0
 @export_category("Data")
 @export var CAN_CONTROL := false
 @export var IS_TAGGER := false
 
-@onready var coyote_timer: Timer = $"Coyote Timer"
-@onready var jump_buffer_timer: Timer = $"Jump Buffer timer"
-@onready var hitbox_cooldown_timer: Timer = $"Hitbox Cooldown Timer"
-@onready var outfit_1: AnimatedSprite2D = $"Outfit 1"
-@onready var outfit_2: AnimatedSprite2D = $"Outfit 2"
-@onready var outfit_3: AnimatedSprite2D = $"Outfit 3"
-@onready var outfit_4: AnimatedSprite2D = $"Outfit 4"
-@onready var outfit_5: AnimatedSprite2D = $"Outfit 5"
-@onready var outfit_6: AnimatedSprite2D = $"Outfit 6"
-@onready var bomb: Sprite2D = $Bomb
+@onready var bomb: Sprite2D = %Bomb
+@onready var outfit_1: AnimatedSprite2D = %"Outfit 1"
+@onready var outfit_2: AnimatedSprite2D = %"Outfit 2"
+@onready var outfit_3: AnimatedSprite2D = %"Outfit 3"
+@onready var outfit_4: AnimatedSprite2D = %"Outfit 4"
+@onready var outfit_5: AnimatedSprite2D = %"Outfit 5"
+@onready var outfit_6: AnimatedSprite2D = %"Outfit 6"
+@onready var coyote_timer: Timer = %"Coyote Timer"
+@onready var jump_buffer_timer: Timer = %"Jump Buffer timer"
+@onready var hitbox_cooldown_timer: Timer = %"Hitbox Cooldown Timer"
 
+var outfits := [6]
 var animation: AnimatedSprite2D
 var direction := 0.0
 var coyote_time_activated := false
-var jump_buffer := false
 var hitbox_on_cooldown := false
+var facing_right := true
 
 # This function sets the player up.
 func _ready() -> void:
-	if OUTFIT == 1:
-		animation = outfit_1
-		outfit_1.visible = true
-		outfit_2.visible = false
-		outfit_3.visible = false
-		outfit_4.visible = false
-		outfit_5.visible = false
-		outfit_6.visible = false
-	elif OUTFIT == 2:
-		animation = outfit_2
-		outfit_1.visible = false
-		outfit_2.visible = true
-		outfit_3.visible = false
-		outfit_4.visible = false
-		outfit_5.visible = false
-		outfit_6.visible = false
-	elif OUTFIT == 3:
-		animation = outfit_3
-		outfit_1.visible = false
-		outfit_2.visible = false
-		outfit_3.visible = true
-		outfit_4.visible = false
-		outfit_5.visible = false
-		outfit_6.visible = false
-	elif OUTFIT == 4:
-		animation = outfit_4
-		outfit_1.visible = false
-		outfit_2.visible = false
-		outfit_3.visible = false
-		outfit_4.visible = true
-		outfit_5.visible = false
-		outfit_6.visible = false
-	elif OUTFIT == 5:
-		animation = outfit_5
-		outfit_1.visible = false
-		outfit_2.visible = false
-		outfit_3.visible = false
-		outfit_4.visible = false
-		outfit_5.visible = true
-		outfit_6.visible = false
-	elif OUTFIT == 6:
-		animation = outfit_6
-		outfit_1.visible = false
-		outfit_2.visible = false
-		outfit_3.visible = false
-		outfit_4.visible = false
-		outfit_5.visible = false
-		outfit_6.visible = true
+	outfits = [outfit_1, outfit_2, outfit_3, outfit_4, outfit_5, outfit_6]
+	for i in outfits:
+		i.visible = false
+	outfits[OUTFIT - 1].visible = true
+	animation = outfits[OUTFIT - 1]
 
 # This function contains all the player logic.
 func _physics_process(delta: float) -> void:
@@ -145,30 +103,10 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	# Turn
-	face_direction()
+	_face_direction()
 	
-	# Animations
-	anims()
-
-# This function flips sprite based on direction.
-func face_direction() -> void:
-	if direction > 0:
-		animation.flip_h = false
-		bomb.position.x = -7
-		bomb.flip_h = true
-	elif direction < 0:
-		animation.flip_h = true
-		bomb.position.x  = 7
-		bomb.flip_h = true
-
-# This function plays the animation.
-func anims() -> void:
-	if !is_on_floor():
-		animation.play("jump")
-	elif velocity.x != 0:
-		animation.play("run")
-	else:
-		animation.play("idle")
+	# Play animations
+	_anims()
 
 # This function makes the player jump.
 func jump() -> void:
@@ -178,19 +116,42 @@ func jump() -> void:
 	coyote_timer.stop()
 	coyote_time_activated = true
 
+# This function flips sprite based on direction.
+func _face_direction() -> void:
+	if direction > 0 and !facing_right:
+		animation.flip_h = false
+		bomb.position.x = -6
+		bomb.flip_h = false
+		facing_right = true
+	elif direction < 0 and facing_right:
+		animation.flip_h = true
+		bomb.position.x = 6
+		bomb.flip_h = true
+		facing_right = false
+
+# This function plays all the animations.
+func _anims() -> void:
+	if !is_on_floor():
+		animation.play("jump")
+	elif velocity.x != 0:
+		animation.play("run")
+	else:
+		animation.play("idle")
+
+# This function checks whether another Player is Overlapping with this one.
 func _on_hitbox_checker_body_entered(body: Node2D) -> void:
 	if body is Player:
-		print("here" + str(OUTFIT))
 		if hitbox_on_cooldown:
 			return
 		hitbox_on_cooldown = true
 		hitbox_cooldown_timer.start()
-		if !self.IS_TAGGER:
+		if not self.IS_TAGGER and body.IS_TAGGER:
 			IS_TAGGER = true
 			body.IS_TAGGER = false
-		if self.IS_TAGGER:
-			IS_TAGGER = false
+		elif self.IS_TAGGER and not body.IS_TAGGER:
+			IS_TAGGER = false 
 			body.IS_TAGGER = true
 
+# This resets the collision after its once activated.
 func _on_hitbox_cooldown_timer_timeout() -> void:
 	hitbox_on_cooldown = false

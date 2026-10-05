@@ -928,7 +928,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("../HUD/Red Light 1:visible")
+tracks/2/path = NodePath("../Match/HUD/Traffic Lights/Red Light 1:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -940,7 +940,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("../HUD/Yellow Light 1:visible")
+tracks/3/path = NodePath("../Match/HUD/Traffic Lights/Yellow Light 1:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -952,7 +952,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("../HUD/Green Light 1:visible")
+tracks/4/path = NodePath("../Match/HUD/Traffic Lights/Green Light 1:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -964,7 +964,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("../HUD/Red Light 2:visible")
+tracks/5/path = NodePath("../Match/HUD/Traffic Lights/Red Light 2:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -976,7 +976,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("../HUD/Yellow Light 2:visible")
+tracks/6/path = NodePath("../Match/HUD/Traffic Lights/Yellow Light 2:visible")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -988,7 +988,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("../HUD/Green Light 2:visible")
+tracks/7/path = NodePath("../Match/HUD/Traffic Lights/Green Light 2:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -1000,7 +1000,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("../HUD/Red Light 3:visible")
+tracks/8/path = NodePath("../Match/HUD/Traffic Lights/Red Light 3:visible")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -1012,7 +1012,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("../HUD/Yellow Light 3:visible")
+tracks/9/path = NodePath("../Match/HUD/Traffic Lights/Yellow Light 3:visible")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -1024,7 +1024,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("../HUD/Green Light 3:visible")
+tracks/10/path = NodePath("../Match/HUD/Traffic Lights/Green Light 3:visible")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -1040,7 +1040,7 @@ length = 3.0000000000000004
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../HUD/Red Light 1:visible")
+tracks/0/path = NodePath("../Match/HUD/Traffic Lights/Red Light 1:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -1052,7 +1052,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../HUD/Yellow Light 1:visible")
+tracks/1/path = NodePath("../Match/HUD/Traffic Lights/Yellow Light 1:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -1064,7 +1064,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("../HUD/Green Light 1:visible")
+tracks/2/path = NodePath("../Match/HUD/Traffic Lights/Green Light 1:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -1076,7 +1076,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("../HUD/Red Light 2:visible")
+tracks/3/path = NodePath("../Match/HUD/Traffic Lights/Red Light 2:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -1088,7 +1088,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("../HUD/Yellow Light 2:visible")
+tracks/4/path = NodePath("../Match/HUD/Traffic Lights/Yellow Light 2:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -1100,7 +1100,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("../HUD/Green Light 2:visible")
+tracks/5/path = NodePath("../Match/HUD/Traffic Lights/Green Light 2:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -1112,7 +1112,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("../HUD/Red Light 3:visible")
+tracks/6/path = NodePath("../Match/HUD/Traffic Lights/Red Light 3:visible")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -1124,7 +1124,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("../HUD/Yellow Light 3:visible")
+tracks/7/path = NodePath("../Match/HUD/Traffic Lights/Yellow Light 3:visible")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -1136,7 +1136,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("../HUD/Green Light 3:visible")
+tracks/8/path = NodePath("../Match/HUD/Traffic Lights/Green Light 3:visible")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -2134,21 +2134,260 @@ animations = [{
 [node name="Match and Making" type="Node2D" unique_id=1325832673]
 script = ExtResource("1_t252k")
 
-[node name="MatchMaking" type="Node2D" parent="." unique_id=1768198970]
+[node name="Matchmaking" type="Node2D" parent="." unique_id=1768198970]
+unique_name_in_owner = true
 
-[node name="Background" type="ColorRect" parent="MatchMaking" unique_id=2075677858]
+[node name="Background" type="ColorRect" parent="Matchmaking" unique_id=2075677858]
 offset_right = 640.0
 offset_bottom = 360.0
 color = Color(0, 0.7254902, 1, 1)
 
-[node name="Start" type="TextureButton" parent="MatchMaking" unique_id=1276765627]
+[node name="Add Players" type="Node2D" parent="Matchmaking" unique_id=774253881]
+
+[node name="Point 1" type="Node2D" parent="Matchmaking/Add Players" unique_id=829707659]
+position = Vector2(103, 121)
+scale = Vector2(6.195, 6.195)
+
+[node name="Outfit 1" type="AnimatedSprite2D" parent="Matchmaking/Add Players/Point 1" unique_id=123584186]
+position = Vector2(-0.43999767, -1.4400005)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_3cemj")
+animation = &"jump"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="Matchmaking/Add Players/Point 1" unique_id=2069489179]
+position = Vector2(-0.48426148, -8.232446)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("24_y2fpn")
+
+[node name="Point 2" type="Node2D" parent="Matchmaking/Add Players" unique_id=489167842]
+position = Vector2(240, 121)
+scale = Vector2(6.195, 6.195)
+
+[node name="Outfit 2" type="AnimatedSprite2D" parent="Matchmaking/Add Players/Point 2" unique_id=1898531085]
+position = Vector2(0.32284036, 0.5599995)
+scale = Vector2(0.58, 0.58)
+sprite_frames = SubResource("SpriteFrames_p36xy")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="Matchmaking/Add Players/Point 2" unique_id=1884661231]
+position = Vector2(-0.48426148, -8.232446)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("25_hup1r")
+
+[node name="Point 3" type="Node2D" parent="Matchmaking/Add Players" unique_id=588270685]
+unique_name_in_owner = true
+position = Vector2(382, 121)
+scale = Vector2(6.195, 6.195)
+
+[node name="Outfit 3" type="AnimatedSprite2D" parent="Matchmaking/Add Players/Point 3" unique_id=147417368]
+visible = false
+position = Vector2(-0.44000244, 0.5600014)
+scale = Vector2(0.45999998, 0.45999998)
+sprite_frames = SubResource("SpriteFrames_47ed3")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="Matchmaking/Add Players/Point 3" unique_id=1473784624]
+visible = false
+position = Vector2(-0.48426148, -8.232446)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("26_w3w8l")
+
+[node name="Add" type="TextureButton" parent="Matchmaking/Add Players/Point 3" unique_id=1419525596]
+offset_left = -2.259887
+offset_top = -1.7756255
+offset_right = 15.740113
+offset_bottom = 16.224375
+scale = Vector2(0.265, 0.265)
+focus_neighbor_right = NodePath("../../Point 4/Add")
+focus_neighbor_bottom = NodePath("../../../Buttons/Controls")
+focus_next = NodePath("../../../Buttons/Controls")
+texture_normal = ExtResource("27_x807v")
+texture_pressed = ExtResource("28_u8j7f")
+texture_hover = ExtResource("29_xnqjf")
+texture_focused = ExtResource("29_xnqjf")
+
+[node name="Remove" type="TextureButton" parent="Matchmaking/Add Players/Point 3" unique_id=804787863]
+visible = false
+offset_left = -9.975
+offset_top = -9.749
+offset_right = 8.025
+offset_bottom = 8.251
+scale = Vector2(0.16, 0.16)
+focus_neighbor_right = NodePath("../../Point 4/Add")
+focus_neighbor_bottom = NodePath("../../Point 6/Add")
+focus_next = NodePath("../../Point 6/Add")
+texture_normal = ExtResource("22_r17nh")
+texture_pressed = ExtResource("23_lqmox")
+texture_hover = ExtResource("24_fn7kg")
+texture_focused = ExtResource("24_fn7kg")
+
+[node name="Point 4" type="Node2D" parent="Matchmaking/Add Players" unique_id=24603470]
+unique_name_in_owner = true
+position = Vector2(524, 121)
+scale = Vector2(6.195, 6.195)
+
+[node name="Outfit 4" type="AnimatedSprite2D" parent="Matchmaking/Add Players/Point 4" unique_id=405241681]
+visible = false
+position = Vector2(0, -1)
+scale = Vector2(0.73499984, 0.73499984)
+sprite_frames = SubResource("SpriteFrames_3v5kv")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="Matchmaking/Add Players/Point 4" unique_id=41209287]
+visible = false
+position = Vector2(-0.48426148, -8.232446)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("30_6f51d")
+
+[node name="Add" type="TextureButton" parent="Matchmaking/Add Players/Point 4" unique_id=1796867858]
+visible = false
+offset_left = -2.259887
+offset_top = -1.7756255
+offset_right = 15.740113
+offset_bottom = 16.224375
+scale = Vector2(0.265, 0.265)
+focus_neighbor_left = NodePath("../../Point 3/Remove")
+focus_neighbor_bottom = NodePath("../../../Buttons/Start")
+focus_next = NodePath("../../../Buttons/Start")
+texture_normal = ExtResource("27_x807v")
+texture_pressed = ExtResource("28_u8j7f")
+texture_hover = ExtResource("29_xnqjf")
+texture_focused = ExtResource("29_xnqjf")
+
+[node name="Remove" type="TextureButton" parent="Matchmaking/Add Players/Point 4" unique_id=67589546]
+visible = false
+offset_left = -9.846649
+offset_top = -10.00807
+offset_right = 8.153351
+offset_bottom = 7.99193
+scale = Vector2(0.16, 0.16)
+focus_neighbor_left = NodePath("../../Point 3/Remove")
+focus_neighbor_bottom = NodePath("../../../Buttons/Start")
+focus_next = NodePath("../../../Buttons/Start")
+texture_normal = ExtResource("22_r17nh")
+texture_pressed = ExtResource("23_lqmox")
+texture_hover = ExtResource("24_fn7kg")
+texture_focused = ExtResource("24_fn7kg")
+
+[node name="Point 5" type="Node2D" parent="Matchmaking/Add Players" unique_id=1499962818]
+unique_name_in_owner = true
+position = Vector2(103, 258)
+scale = Vector2(6.195, 6.195)
+
+[node name="Outfit 5" type="AnimatedSprite2D" parent="Matchmaking/Add Players/Point 5" unique_id=1659833161]
+visible = false
+position = Vector2(-0.43999863, 0.5600014)
+scale = Vector2(0.60499996, 0.60499996)
+sprite_frames = SubResource("SpriteFrames_2xi81")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="Matchmaking/Add Players/Point 5" unique_id=1968135989]
+visible = false
+position = Vector2(-0.48426148, -8.232446)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("31_bdx22")
+
+[node name="Add" type="TextureButton" parent="Matchmaking/Add Players/Point 5" unique_id=2016612467]
+visible = false
+offset_left = -2.259887
+offset_top = -1.7756255
+offset_right = 15.740113
+offset_bottom = 16.224375
+scale = Vector2(0.265, 0.265)
+focus_neighbor_top = NodePath("../../Point 3/Remove")
+focus_neighbor_right = NodePath("../../Point 6/Add")
+focus_neighbor_bottom = NodePath("../../../Buttons/Controls")
+focus_next = NodePath("../../../Buttons/Controls")
+texture_normal = ExtResource("27_x807v")
+texture_pressed = ExtResource("28_u8j7f")
+texture_hover = ExtResource("29_xnqjf")
+texture_focused = ExtResource("29_xnqjf")
+
+[node name="Remove" type="TextureButton" parent="Matchmaking/Add Players/Point 5" unique_id=1359187759]
+visible = false
+offset_left = -10.169491
+offset_top = -10.00807
+offset_right = 7.830509
+offset_bottom = 7.99193
+scale = Vector2(0.16, 0.16)
+focus_neighbor_top = NodePath("../../Point 3/Remove")
+focus_neighbor_right = NodePath("../../Point 6/Add")
+focus_neighbor_bottom = NodePath("../../../Buttons/Back")
+focus_next = NodePath("../../../Buttons/Controls")
+texture_normal = ExtResource("22_r17nh")
+texture_pressed = ExtResource("23_lqmox")
+texture_hover = ExtResource("24_fn7kg")
+texture_focused = ExtResource("24_fn7kg")
+
+[node name="Point 6" type="Node2D" parent="Matchmaking/Add Players" unique_id=244088503]
+unique_name_in_owner = true
+position = Vector2(240, 258)
+scale = Vector2(6.195, 6.195)
+
+[node name="Outfit 6" type="AnimatedSprite2D" parent="Matchmaking/Add Players/Point 6" unique_id=1875240878]
+visible = false
+position = Vector2(-0.4399948, 0.5600014)
+scale = Vector2(0.70499986, 0.70499986)
+sprite_frames = SubResource("SpriteFrames_r17nh")
+animation = &"run"
+autoplay = "idle"
+
+[node name="Plate" type="Sprite2D" parent="Matchmaking/Add Players/Point 6" unique_id=1155730714]
+visible = false
+position = Vector2(-0.48426148, -8.232446)
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("32_2maol")
+
+[node name="Add" type="TextureButton" parent="Matchmaking/Add Players/Point 6" unique_id=433107358]
+visible = false
+offset_left = -2.259887
+offset_top = -1.7756255
+offset_right = 15.740113
+offset_bottom = 16.224375
+scale = Vector2(0.265, 0.265)
+focus_neighbor_left = NodePath("../../Point 5/Remove")
+focus_neighbor_top = NodePath("../../Point 3/Remove")
+focus_neighbor_right = NodePath("../../Point 4/Remove")
+focus_neighbor_bottom = NodePath("../../../Buttons/Controls")
+focus_next = NodePath("../../../Buttons/Controls")
+texture_normal = ExtResource("27_x807v")
+texture_pressed = ExtResource("28_u8j7f")
+texture_hover = ExtResource("29_xnqjf")
+texture_focused = ExtResource("29_xnqjf")
+
+[node name="Remove" type="TextureButton" parent="Matchmaking/Add Players/Point 6" unique_id=698949550]
+visible = false
+offset_left = -9.975
+offset_top = -9.749
+offset_right = 8.025
+offset_bottom = 8.251
+scale = Vector2(0.16, 0.16)
+focus_neighbor_left = NodePath("../../Point 5/Remove")
+focus_neighbor_top = NodePath("../../Point 3/Remove")
+focus_neighbor_right = NodePath("../../../Buttons/Controls")
+focus_neighbor_bottom = NodePath("../../../Buttons/Controls")
+focus_next = NodePath("../../../Buttons/Controls")
+texture_normal = ExtResource("22_r17nh")
+texture_pressed = ExtResource("23_lqmox")
+texture_hover = ExtResource("24_fn7kg")
+texture_focused = ExtResource("24_fn7kg")
+
+[node name="Buttons" type="Node2D" parent="Matchmaking" unique_id=2030718025]
+
+[node name="Start" type="TextureButton" parent="Matchmaking/Buttons" unique_id=1276765627]
+unique_name_in_owner = true
 offset_left = 486.0
 offset_top = 310.0
 offset_right = 551.0
 offset_bottom = 326.0
 scale = Vector2(2.05, 2.05)
 focus_neighbor_left = NodePath("../Controls")
-focus_neighbor_top = NodePath("../PlayerPoints/3/Add")
+focus_neighbor_top = NodePath("../../Add Players/Point 3/Add")
 focus_next = NodePath("../Controls")
 focus_previous = NodePath("../Controls")
 texture_normal = ExtResource("2_dkfpw")
@@ -2156,13 +2395,14 @@ texture_pressed = ExtResource("3_lvr0n")
 texture_hover = ExtResource("4_7qvq7")
 texture_focused = ExtResource("4_7qvq7")
 
-[node name="Back" type="TextureButton" parent="MatchMaking" unique_id=1663141699]
+[node name="Back" type="TextureButton" parent="Matchmaking/Buttons" unique_id=1663141699]
+unique_name_in_owner = true
 offset_left = 22.00003
 offset_top = 310.0
 offset_right = 40.00003
 offset_bottom = 328.0
 scale = Vector2(1.817, 1.817)
-focus_neighbor_top = NodePath("../PlayerPoints/3/Add")
+focus_neighbor_top = NodePath("../../Add Players/Point 3/Add")
 focus_neighbor_right = NodePath("../Controls")
 focus_next = NodePath("../Controls")
 texture_normal = ExtResource("5_dh83l")
@@ -2170,14 +2410,15 @@ texture_pressed = ExtResource("6_wke1h")
 texture_hover = ExtResource("7_vnuik")
 texture_focused = ExtResource("7_vnuik")
 
-[node name="Controls" type="TextureButton" parent="MatchMaking" unique_id=1232151637]
+[node name="Controls" type="TextureButton" parent="Matchmaking/Buttons" unique_id=1232151637]
+unique_name_in_owner = true
 offset_left = 308.0
 offset_top = 310.0
 offset_right = 392.0
 offset_bottom = 326.0
 scale = Vector2(2.05, 2.05)
 focus_neighbor_left = NodePath("../Back")
-focus_neighbor_top = NodePath("../PlayerPoints/3/Add")
+focus_neighbor_top = NodePath("../../Add Players/Point 3/Add")
 focus_neighbor_right = NodePath("../Start")
 focus_next = NodePath("../Start")
 disabled = true
@@ -2186,243 +2427,9 @@ texture_pressed = ExtResource("9_3v5kv")
 texture_hover = ExtResource("10_2xi81")
 texture_focused = ExtResource("10_2xi81")
 
-[node name="PlayerPoints" type="Node2D" parent="MatchMaking" unique_id=774253881]
+[node name="Messages" type="Node2D" parent="Matchmaking" unique_id=1203682120]
 
-[node name="1" type="Node2D" parent="MatchMaking/PlayerPoints" unique_id=829707659]
-position = Vector2(103, 121)
-scale = Vector2(6.195, 6.195)
-
-[node name="Outfit 1" type="AnimatedSprite2D" parent="MatchMaking/PlayerPoints/1" unique_id=123584186]
-position = Vector2(-0.43999767, -1.4400005)
-scale = Vector2(0.5, 0.5)
-sprite_frames = SubResource("SpriteFrames_3cemj")
-animation = &"jump"
-autoplay = "idle"
-
-[node name="Plate" type="Sprite2D" parent="MatchMaking/PlayerPoints/1" unique_id=2069489179]
-position = Vector2(-0.48426148, -8.232446)
-scale = Vector2(0.16, 0.16)
-texture = ExtResource("24_y2fpn")
-
-[node name="2" type="Node2D" parent="MatchMaking/PlayerPoints" unique_id=489167842]
-position = Vector2(240, 121)
-scale = Vector2(6.195, 6.195)
-
-[node name="Outfit 2" type="AnimatedSprite2D" parent="MatchMaking/PlayerPoints/2" unique_id=1898531085]
-position = Vector2(0.32284036, 0.5599995)
-scale = Vector2(0.58, 0.58)
-sprite_frames = SubResource("SpriteFrames_p36xy")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="Plate" type="Sprite2D" parent="MatchMaking/PlayerPoints/2" unique_id=1884661231]
-position = Vector2(-0.48426148, -8.232446)
-scale = Vector2(0.16, 0.16)
-texture = ExtResource("25_hup1r")
-
-[node name="3" type="Node2D" parent="MatchMaking/PlayerPoints" unique_id=588270685]
-position = Vector2(382, 121)
-scale = Vector2(6.195, 6.195)
-
-[node name="Outfit 3" type="AnimatedSprite2D" parent="MatchMaking/PlayerPoints/3" unique_id=147417368]
-visible = false
-position = Vector2(-0.44000244, 0.5600014)
-scale = Vector2(0.45999998, 0.45999998)
-sprite_frames = SubResource("SpriteFrames_47ed3")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="Plate" type="Sprite2D" parent="MatchMaking/PlayerPoints/3" unique_id=1473784624]
-visible = false
-position = Vector2(-0.48426148, -8.232446)
-scale = Vector2(0.16, 0.16)
-texture = ExtResource("26_w3w8l")
-
-[node name="Add" type="TextureButton" parent="MatchMaking/PlayerPoints/3" unique_id=1419525596]
-offset_left = -2.259887
-offset_top = -1.7756255
-offset_right = 15.740113
-offset_bottom = 16.224375
-scale = Vector2(0.265, 0.265)
-focus_neighbor_right = NodePath("../../4/Add")
-focus_neighbor_bottom = NodePath("../../../Controls")
-focus_next = NodePath("../../../Controls")
-texture_normal = ExtResource("27_x807v")
-texture_pressed = ExtResource("28_u8j7f")
-texture_hover = ExtResource("29_xnqjf")
-texture_focused = ExtResource("29_xnqjf")
-
-[node name="Remove" type="TextureButton" parent="MatchMaking/PlayerPoints/3" unique_id=804787863]
-visible = false
-offset_left = -9.975
-offset_top = -9.749
-offset_right = 8.025
-offset_bottom = 8.251
-scale = Vector2(0.16, 0.16)
-focus_neighbor_right = NodePath("../../4/Add")
-focus_neighbor_bottom = NodePath("../../6/Add")
-focus_next = NodePath("../../6/Add")
-texture_normal = ExtResource("22_r17nh")
-texture_pressed = ExtResource("23_lqmox")
-texture_hover = ExtResource("24_fn7kg")
-texture_focused = ExtResource("24_fn7kg")
-
-[node name="4" type="Node2D" parent="MatchMaking/PlayerPoints" unique_id=24603470]
-position = Vector2(524, 121)
-scale = Vector2(6.195, 6.195)
-
-[node name="Outfit 4" type="AnimatedSprite2D" parent="MatchMaking/PlayerPoints/4" unique_id=405241681]
-visible = false
-position = Vector2(0, -1)
-scale = Vector2(0.73499984, 0.73499984)
-sprite_frames = SubResource("SpriteFrames_3v5kv")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="Plate" type="Sprite2D" parent="MatchMaking/PlayerPoints/4" unique_id=41209287]
-visible = false
-position = Vector2(-0.48426148, -8.232446)
-scale = Vector2(0.16, 0.16)
-texture = ExtResource("30_6f51d")
-
-[node name="Add" type="TextureButton" parent="MatchMaking/PlayerPoints/4" unique_id=1796867858]
-visible = false
-offset_left = -2.259887
-offset_top = -1.7756255
-offset_right = 15.740113
-offset_bottom = 16.224375
-scale = Vector2(0.265, 0.265)
-focus_neighbor_left = NodePath("../../3/Remove")
-focus_neighbor_bottom = NodePath("../../../Start")
-focus_next = NodePath("../../../Start")
-texture_normal = ExtResource("27_x807v")
-texture_pressed = ExtResource("28_u8j7f")
-texture_hover = ExtResource("29_xnqjf")
-texture_focused = ExtResource("29_xnqjf")
-
-[node name="Remove" type="TextureButton" parent="MatchMaking/PlayerPoints/4" unique_id=67589546]
-visible = false
-offset_left = -9.846649
-offset_top = -10.00807
-offset_right = 8.153351
-offset_bottom = 7.99193
-scale = Vector2(0.16, 0.16)
-focus_neighbor_left = NodePath("../../3/Remove")
-focus_neighbor_bottom = NodePath("../../../Start")
-focus_next = NodePath("../../../Start")
-texture_normal = ExtResource("22_r17nh")
-texture_pressed = ExtResource("23_lqmox")
-texture_hover = ExtResource("24_fn7kg")
-texture_focused = ExtResource("24_fn7kg")
-
-[node name="5" type="Node2D" parent="MatchMaking/PlayerPoints" unique_id=1499962818]
-position = Vector2(103, 258)
-scale = Vector2(6.195, 6.195)
-
-[node name="Outfit 5" type="AnimatedSprite2D" parent="MatchMaking/PlayerPoints/5" unique_id=1659833161]
-visible = false
-position = Vector2(-0.43999863, 0.5600014)
-scale = Vector2(0.60499996, 0.60499996)
-sprite_frames = SubResource("SpriteFrames_2xi81")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="Plate" type="Sprite2D" parent="MatchMaking/PlayerPoints/5" unique_id=1968135989]
-visible = false
-position = Vector2(-0.48426148, -8.232446)
-scale = Vector2(0.16, 0.16)
-texture = ExtResource("31_bdx22")
-
-[node name="Add" type="TextureButton" parent="MatchMaking/PlayerPoints/5" unique_id=2016612467]
-visible = false
-offset_left = -2.259887
-offset_top = -1.7756255
-offset_right = 15.740113
-offset_bottom = 16.224375
-scale = Vector2(0.265, 0.265)
-focus_neighbor_top = NodePath("../../3/Remove")
-focus_neighbor_right = NodePath("../../6/Add")
-focus_neighbor_bottom = NodePath("../../../Controls")
-focus_next = NodePath("../../../Controls")
-texture_normal = ExtResource("27_x807v")
-texture_pressed = ExtResource("28_u8j7f")
-texture_hover = ExtResource("29_xnqjf")
-texture_focused = ExtResource("29_xnqjf")
-
-[node name="Remove" type="TextureButton" parent="MatchMaking/PlayerPoints/5" unique_id=1359187759]
-visible = false
-offset_left = -10.169491
-offset_top = -10.00807
-offset_right = 7.830509
-offset_bottom = 7.99193
-scale = Vector2(0.16, 0.16)
-focus_neighbor_top = NodePath("../../3/Remove")
-focus_neighbor_right = NodePath("../../6/Add")
-focus_neighbor_bottom = NodePath("../../../Back")
-focus_next = NodePath("../../../Controls")
-texture_normal = ExtResource("22_r17nh")
-texture_pressed = ExtResource("23_lqmox")
-texture_hover = ExtResource("24_fn7kg")
-texture_focused = ExtResource("24_fn7kg")
-
-[node name="6" type="Node2D" parent="MatchMaking/PlayerPoints" unique_id=244088503]
-position = Vector2(240, 258)
-scale = Vector2(6.195, 6.195)
-
-[node name="Outfit 6" type="AnimatedSprite2D" parent="MatchMaking/PlayerPoints/6" unique_id=1875240878]
-visible = false
-position = Vector2(-0.4399948, 0.5600014)
-scale = Vector2(0.70499986, 0.70499986)
-sprite_frames = SubResource("SpriteFrames_r17nh")
-animation = &"run"
-autoplay = "idle"
-
-[node name="Plate" type="Sprite2D" parent="MatchMaking/PlayerPoints/6" unique_id=1155730714]
-visible = false
-position = Vector2(-0.48426148, -8.232446)
-scale = Vector2(0.16, 0.16)
-texture = ExtResource("32_2maol")
-
-[node name="Add" type="TextureButton" parent="MatchMaking/PlayerPoints/6" unique_id=433107358]
-visible = false
-offset_left = -2.259887
-offset_top = -1.7756255
-offset_right = 15.740113
-offset_bottom = 16.224375
-scale = Vector2(0.265, 0.265)
-focus_neighbor_left = NodePath("../../5/Remove")
-focus_neighbor_top = NodePath("../../3/Remove")
-focus_neighbor_right = NodePath("../../4/Remove")
-focus_neighbor_bottom = NodePath("../../../Controls")
-focus_next = NodePath("../../../Controls")
-texture_normal = ExtResource("27_x807v")
-texture_pressed = ExtResource("28_u8j7f")
-texture_hover = ExtResource("29_xnqjf")
-texture_focused = ExtResource("29_xnqjf")
-
-[node name="Remove" type="TextureButton" parent="MatchMaking/PlayerPoints/6" unique_id=698949550]
-visible = false
-offset_left = -9.975
-offset_top = -9.749
-offset_right = 8.025
-offset_bottom = 8.251
-scale = Vector2(0.16, 0.16)
-focus_neighbor_left = NodePath("../../5/Remove")
-focus_neighbor_top = NodePath("../../3/Remove")
-focus_neighbor_right = NodePath("../../../Controls")
-focus_neighbor_bottom = NodePath("../../../Controls")
-focus_next = NodePath("../../../Controls")
-texture_normal = ExtResource("22_r17nh")
-texture_pressed = ExtResource("23_lqmox")
-texture_hover = ExtResource("24_fn7kg")
-texture_focused = ExtResource("24_fn7kg")
-
-[node name="Anims" type="AnimationPlayer" parent="MatchMaking" unique_id=610888069]
-libraries/ = SubResource("AnimationLibrary_q1dib")
-
-[node name="Messages" type="Node2D" parent="MatchMaking" unique_id=1203682120]
-
-[node name="Remove Error" type="Label" parent="MatchMaking/Messages" unique_id=775923956]
+[node name="Remove Error" type="Label" parent="Matchmaking/Messages" unique_id=775923956]
 offset_left = 104.0
 offset_top = 362.29
 offset_right = 534.0
@@ -2435,118 +2442,17 @@ text = "Remove Latest Player First"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Anims" type="AnimationPlayer" parent="Matchmaking" unique_id=610888069]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_q1dib")
+
 [node name="Match" type="Node2D" parent="." unique_id=161910445]
+unique_name_in_owner = true
 
-[node name="HUD" type="CanvasLayer" parent="." unique_id=1456594037]
+[node name="HUD" type="CanvasLayer" parent="Match" unique_id=1456594037]
 
-[node name="Red Light 1" type="Sprite2D" parent="HUD" unique_id=2123837355]
-visible = false
-position = Vector2(320, 180)
-scale = Vector2(2.045, 2.045)
-texture = ExtResource("37_q1dib")
-
-[node name="Yellow Light 1" type="Sprite2D" parent="HUD" unique_id=1303461050]
-visible = false
-position = Vector2(320, 180)
-scale = Vector2(2.045, 2.045)
-texture = ExtResource("38_1mdks")
-
-[node name="Green Light 1" type="Sprite2D" parent="HUD" unique_id=1730387138]
-visible = false
-position = Vector2(320, 180)
-scale = Vector2(2.045, 2.045)
-texture = ExtResource("39_gbx8y")
-
-[node name="Red Light 2" type="Sprite2D" parent="HUD" unique_id=28376807]
-visible = false
-position = Vector2(258.51752, 180)
-scale = Vector2(2.045, 2.045)
-texture = ExtResource("37_q1dib")
-
-[node name="Yellow Light 2" type="Sprite2D" parent="HUD" unique_id=1380026235]
-visible = false
-position = Vector2(258.51752, 180)
-scale = Vector2(2.045, 2.045)
-texture = ExtResource("38_1mdks")
-
-[node name="Green Light 2" type="Sprite2D" parent="HUD" unique_id=1766837494]
-visible = false
-position = Vector2(258.51752, 180)
-scale = Vector2(2.045, 2.045)
-texture = ExtResource("39_gbx8y")
-
-[node name="Red Light 3" type="Sprite2D" parent="HUD" unique_id=1752557521]
-visible = false
-position = Vector2(381.51752, 180)
-scale = Vector2(2.045, 2.045)
-texture = ExtResource("37_q1dib")
-
-[node name="Yellow Light 3" type="Sprite2D" parent="HUD" unique_id=84657428]
-visible = false
-position = Vector2(381.51752, 180)
-scale = Vector2(2.045, 2.045)
-texture = ExtResource("38_1mdks")
-
-[node name="Green Light 3" type="Sprite2D" parent="HUD" unique_id=1265452500]
-visible = false
-position = Vector2(381.51752, 180)
-scale = Vector2(2.045, 2.045)
-texture = ExtResource("39_gbx8y")
-
-[node name="Bomb On" type="Sprite2D" parent="HUD" unique_id=1256327399]
-visible = false
-position = Vector2(58, 334)
-texture = ExtResource("40_1mdks")
-
-[node name="Outfit 1" type="AnimatedSprite2D" parent="HUD" unique_id=83146014]
-visible = false
-position = Vector2(122, 331)
-scale = Vector2(1.075, 1.075)
-sprite_frames = SubResource("SpriteFrames_0r677")
-animation = &"jump"
-autoplay = "idle"
-
-[node name="Outfit 2" type="AnimatedSprite2D" parent="HUD" unique_id=94311810]
-visible = false
-position = Vector2(122.99999, 334.00003)
-scale = Vector2(1.26, 1.26)
-sprite_frames = SubResource("SpriteFrames_ixvf7")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="Outfit 3" type="AnimatedSprite2D" parent="HUD" unique_id=1243259783]
-visible = false
-position = Vector2(121.99999, 335)
-scale = Vector2(0.935, 0.935)
-sprite_frames = SubResource("SpriteFrames_bndst")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="Outfit 4" type="AnimatedSprite2D" parent="HUD" unique_id=193763143]
-visible = false
-position = Vector2(123, 331.00003)
-scale = Vector2(1.745, 1.745)
-sprite_frames = SubResource("SpriteFrames_b0eb4")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="Outfit 5" type="AnimatedSprite2D" parent="HUD" unique_id=560629803]
-visible = false
-position = Vector2(123, 334)
-scale = Vector2(1.44, 1.44)
-sprite_frames = SubResource("SpriteFrames_xru50")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="Outfit 6" type="AnimatedSprite2D" parent="HUD" unique_id=1688224039]
-visible = false
-position = Vector2(122, 333)
-scale = Vector2(1.64, 1.64)
-sprite_frames = SubResource("SpriteFrames_dn2kq")
-animation = &"idle"
-autoplay = "idle"
-
-[node name="Timer" type="Label" parent="HUD" unique_id=1229164349]
+[node name="Timer Text" type="Label" parent="Match/HUD" unique_id=1229164349]
+unique_name_in_owner = true
 visible = false
 offset_left = 582.0
 offset_top = 304.0
@@ -2558,119 +2464,239 @@ theme_override_font_sizes/font_size = 60
 text = "25"
 horizontal_alignment = 2
 
-[node name="Winner" type="Sprite2D" parent="HUD" unique_id=1644423076]
+[node name="Winner Pop up" type="Sprite2D" parent="Match/HUD" unique_id=1644423076]
+unique_name_in_owner = true
 visible = false
 position = Vector2(320, 180)
 texture = ExtResource("41_gbx8y")
 
-[node name="1" type="Node2D" parent="HUD/Winner" unique_id=1141964210]
+[node name="1" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=1141964210]
 visible = false
 position = Vector2(0, 28.46)
 
-[node name="Outfit 1" type="AnimatedSprite2D" parent="HUD/Winner/1" unique_id=1883614147]
+[node name="Outfit 1" type="AnimatedSprite2D" parent="Match/HUD/Winner Pop up/1" unique_id=1883614147]
 position = Vector2(-0.43999767, -1.4400005)
 scale = Vector2(3.055, 3.055)
 sprite_frames = SubResource("SpriteFrames_3cemj")
 animation = &"jump"
 autoplay = "idle"
 
-[node name="Plate" type="Sprite2D" parent="HUD/Winner/1" unique_id=539253431]
+[node name="Plate" type="Sprite2D" parent="Match/HUD/Winner Pop up/1" unique_id=539253431]
 position = Vector2(-0.48426148, -39.514977)
 scale = Vector2(1.105, 1.105)
 texture = ExtResource("24_y2fpn")
 
-[node name="2" type="Node2D" parent="HUD/Winner" unique_id=293248703]
+[node name="2" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=293248703]
 visible = false
 position = Vector2(0, 28.46)
 
-[node name="Outfit 2" type="AnimatedSprite2D" parent="HUD/Winner/2" unique_id=1697641968]
+[node name="Outfit 2" type="AnimatedSprite2D" parent="Match/HUD/Winner Pop up/2" unique_id=1697641968]
 position = Vector2(0.9999949, 6.54001)
 scale = Vector2(3.7, 3.7)
 sprite_frames = SubResource("SpriteFrames_p36xy")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="Plate" type="Sprite2D" parent="HUD/Winner/2" unique_id=2035228779]
+[node name="Plate" type="Sprite2D" parent="Match/HUD/Winner Pop up/2" unique_id=2035228779]
 position = Vector2(-0.48426148, -39.514977)
 scale = Vector2(1.105, 1.105)
 texture = ExtResource("25_hup1r")
 
-[node name="3" type="Node2D" parent="HUD/Winner" unique_id=1744378655]
+[node name="3" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=1744378655]
 visible = false
 position = Vector2(0, 28.46)
 
-[node name="Outfit 3" type="AnimatedSprite2D" parent="HUD/Winner/3" unique_id=332470662]
+[node name="Outfit 3" type="AnimatedSprite2D" parent="Match/HUD/Winner Pop up/3" unique_id=332470662]
 position = Vector2(-2, 10.540012)
 scale = Vector2(2.59, 2.59)
 sprite_frames = SubResource("SpriteFrames_47ed3")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="Plate" type="Sprite2D" parent="HUD/Winner/3" unique_id=2143497789]
+[node name="Plate" type="Sprite2D" parent="Match/HUD/Winner Pop up/3" unique_id=2143497789]
 position = Vector2(-0.48426148, -39.514977)
 scale = Vector2(1.105, 1.105)
 texture = ExtResource("26_w3w8l")
 
-[node name="4" type="Node2D" parent="HUD/Winner" unique_id=450878768]
+[node name="4" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=450878768]
 visible = false
 position = Vector2(0, 28.46)
 
-[node name="Outfit 4" type="AnimatedSprite2D" parent="HUD/Winner/4" unique_id=1507236108]
+[node name="Outfit 4" type="AnimatedSprite2D" parent="Match/HUD/Winner Pop up/4" unique_id=1507236108]
 position = Vector2(0, -1)
 scale = Vector2(4.355, 4.355)
 sprite_frames = SubResource("SpriteFrames_3v5kv")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="Plate" type="Sprite2D" parent="HUD/Winner/4" unique_id=331051202]
+[node name="Plate" type="Sprite2D" parent="Match/HUD/Winner Pop up/4" unique_id=331051202]
 position = Vector2(-0.48426148, -39.514977)
 scale = Vector2(1.105, 1.105)
 texture = ExtResource("30_6f51d")
 
-[node name="5" type="Node2D" parent="HUD/Winner" unique_id=926352571]
+[node name="5" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=926352571]
 visible = false
 position = Vector2(0, 28.46)
 
-[node name="Outfit 5" type="AnimatedSprite2D" parent="HUD/Winner/5" unique_id=557482366]
+[node name="Outfit 5" type="AnimatedSprite2D" parent="Match/HUD/Winner Pop up/5" unique_id=557482366]
 position = Vector2(-0.9999961, 8.540012)
 scale = Vector2(3.485, 3.485)
 sprite_frames = SubResource("SpriteFrames_2xi81")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="Plate" type="Sprite2D" parent="HUD/Winner/5" unique_id=1025598321]
+[node name="Plate" type="Sprite2D" parent="Match/HUD/Winner Pop up/5" unique_id=1025598321]
 position = Vector2(-0.48426148, -39.514977)
 scale = Vector2(1.105, 1.105)
 texture = ExtResource("31_bdx22")
 
-[node name="6" type="Node2D" parent="HUD/Winner" unique_id=1329990781]
+[node name="6" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=1329990781]
 visible = false
 position = Vector2(0, 28.46)
 
-[node name="Outfit 6" type="AnimatedSprite2D" parent="HUD/Winner/6" unique_id=984475411]
+[node name="Outfit 6" type="AnimatedSprite2D" parent="Match/HUD/Winner Pop up/6" unique_id=984475411]
 position = Vector2(-0.9999924, 7.5400124)
 scale = Vector2(4.26, 4.26)
 sprite_frames = SubResource("SpriteFrames_r17nh")
 animation = &"run"
 autoplay = "idle"
 
-[node name="Plate" type="Sprite2D" parent="HUD/Winner/6" unique_id=229554413]
+[node name="Plate" type="Sprite2D" parent="Match/HUD/Winner Pop up/6" unique_id=229554413]
 position = Vector2(-0.48426148, -39.514977)
 scale = Vector2(1.105, 1.105)
 texture = ExtResource("32_2maol")
 
-[node name="Death Timer" type="Timer" parent="." unique_id=2077930211]
+[node name="Traffic Lights" type="Node2D" parent="Match/HUD" unique_id=592402828]
+
+[node name="Red Light 1" type="Sprite2D" parent="Match/HUD/Traffic Lights" unique_id=2123837355]
+visible = false
+position = Vector2(320, 180)
+scale = Vector2(2.045, 2.045)
+texture = ExtResource("37_q1dib")
+
+[node name="Yellow Light 1" type="Sprite2D" parent="Match/HUD/Traffic Lights" unique_id=1303461050]
+visible = false
+position = Vector2(320, 180)
+scale = Vector2(2.045, 2.045)
+texture = ExtResource("38_1mdks")
+
+[node name="Green Light 1" type="Sprite2D" parent="Match/HUD/Traffic Lights" unique_id=1730387138]
+visible = false
+position = Vector2(320, 180)
+scale = Vector2(2.045, 2.045)
+texture = ExtResource("39_gbx8y")
+
+[node name="Red Light 2" type="Sprite2D" parent="Match/HUD/Traffic Lights" unique_id=28376807]
+visible = false
+position = Vector2(258.51752, 180)
+scale = Vector2(2.045, 2.045)
+texture = ExtResource("37_q1dib")
+
+[node name="Yellow Light 2" type="Sprite2D" parent="Match/HUD/Traffic Lights" unique_id=1380026235]
+visible = false
+position = Vector2(258.51752, 180)
+scale = Vector2(2.045, 2.045)
+texture = ExtResource("38_1mdks")
+
+[node name="Green Light 2" type="Sprite2D" parent="Match/HUD/Traffic Lights" unique_id=1766837494]
+visible = false
+position = Vector2(258.51752, 180)
+scale = Vector2(2.045, 2.045)
+texture = ExtResource("39_gbx8y")
+
+[node name="Red Light 3" type="Sprite2D" parent="Match/HUD/Traffic Lights" unique_id=1752557521]
+visible = false
+position = Vector2(381.51752, 180)
+scale = Vector2(2.045, 2.045)
+texture = ExtResource("37_q1dib")
+
+[node name="Yellow Light 3" type="Sprite2D" parent="Match/HUD/Traffic Lights" unique_id=84657428]
+visible = false
+position = Vector2(381.51752, 180)
+scale = Vector2(2.045, 2.045)
+texture = ExtResource("38_1mdks")
+
+[node name="Green Light 3" type="Sprite2D" parent="Match/HUD/Traffic Lights" unique_id=1265452500]
+visible = false
+position = Vector2(381.51752, 180)
+scale = Vector2(2.045, 2.045)
+texture = ExtResource("39_gbx8y")
+
+[node name="Bomb on" type="Node2D" parent="Match/HUD" unique_id=382656623]
+
+[node name="Bomb Text" type="Sprite2D" parent="Match/HUD/Bomb on" unique_id=1256327399]
+unique_name_in_owner = true
+visible = false
+position = Vector2(58, 334)
+texture = ExtResource("40_1mdks")
+
+[node name="Win Outfit 1" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=83146014]
+unique_name_in_owner = true
+visible = false
+position = Vector2(122, 331)
+scale = Vector2(1.075, 1.075)
+sprite_frames = SubResource("SpriteFrames_0r677")
+animation = &"jump"
+autoplay = "idle"
+
+[node name="Win Outfit 2" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=94311810]
+unique_name_in_owner = true
+visible = false
+position = Vector2(122.99999, 334.00003)
+scale = Vector2(1.26, 1.26)
+sprite_frames = SubResource("SpriteFrames_ixvf7")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Win Outfit 3" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=1243259783]
+unique_name_in_owner = true
+visible = false
+position = Vector2(121.99999, 335)
+scale = Vector2(0.935, 0.935)
+sprite_frames = SubResource("SpriteFrames_bndst")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Win Outfit 4" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=193763143]
+unique_name_in_owner = true
+visible = false
+position = Vector2(123, 331.00003)
+scale = Vector2(1.745, 1.745)
+sprite_frames = SubResource("SpriteFrames_b0eb4")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Win Outfit 5" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=560629803]
+unique_name_in_owner = true
+visible = false
+position = Vector2(123, 334)
+scale = Vector2(1.44, 1.44)
+sprite_frames = SubResource("SpriteFrames_xru50")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Win Outfit 6" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=1688224039]
+unique_name_in_owner = true
+visible = false
+position = Vector2(122, 333)
+scale = Vector2(1.64, 1.64)
+sprite_frames = SubResource("SpriteFrames_dn2kq")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Death Timer" type="Timer" parent="Match/HUD" unique_id=2077930211]
+unique_name_in_owner = true
 wait_time = 25.0
 one_shot = true
 
-[connection signal="pressed" from="MatchMaking/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="MatchMaking/Back" to="." method="_on_back_pressed"]
-[connection signal="pressed" from="MatchMaking/PlayerPoints/3/Add" to="." method="_on_add_3_pressed"]
-[connection signal="pressed" from="MatchMaking/PlayerPoints/3/Remove" to="." method="_on_remove_3_pressed"]
-[connection signal="pressed" from="MatchMaking/PlayerPoints/4/Add" to="." method="_on_add_4_pressed"]
-[connection signal="pressed" from="MatchMaking/PlayerPoints/4/Remove" to="." method="_on_remove_4_pressed"]
-[connection signal="pressed" from="MatchMaking/PlayerPoints/5/Add" to="." method="_on_add_5_pressed"]
-[connection signal="pressed" from="MatchMaking/PlayerPoints/5/Remove" to="." method="_on_remove_5_pressed"]
-[connection signal="pressed" from="MatchMaking/PlayerPoints/6/Add" to="." method="_on_add_6_pressed"]
-[connection signal="pressed" from="MatchMaking/PlayerPoints/6/Remove" to="." method="_on_remove_6_pressed"]
-[connection signal="timeout" from="Death Timer" to="." method="_on_death_timer_timeout"]
+[connection signal="pressed" from="Matchmaking/Add Players/Point 3/Add" to="." method="_on_add_3_pressed"]
+[connection signal="pressed" from="Matchmaking/Add Players/Point 3/Remove" to="." method="_on_remove_3_pressed"]
+[connection signal="pressed" from="Matchmaking/Add Players/Point 4/Add" to="." method="_on_add_4_pressed"]
+[connection signal="pressed" from="Matchmaking/Add Players/Point 4/Remove" to="." method="_on_remove_4_pressed"]
+[connection signal="pressed" from="Matchmaking/Add Players/Point 5/Add" to="." method="_on_add_5_pressed"]
+[connection signal="pressed" from="Matchmaking/Add Players/Point 5/Remove" to="." method="_on_remove_5_pressed"]
+[connection signal="pressed" from="Matchmaking/Add Players/Point 6/Add" to="." method="_on_add_6_pressed"]
+[connection signal="pressed" from="Matchmaking/Add Players/Point 6/Remove" to="." method="_on_remove_6_pressed"]
+[connection signal="pressed" from="Matchmaking/Buttons/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Matchmaking/Buttons/Back" to="." method="_on_back_pressed"]
+[connection signal="timeout" from="Match/HUD/Death Timer" to="." method="_on_death_timer_timeout"]

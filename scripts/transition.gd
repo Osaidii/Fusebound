@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@onready var transiton_player: AnimationPlayer = $TransitonPlayer
+@onready var transiton_player: AnimationPlayer = $"Transition Player"
 
 # This Function is for Deactivating the Transiton Rectangle
 func scene_in() -> void:
