@@ -140,7 +140,9 @@ func _anims() -> void:
 
 # This function checks whether another Player is Overlapping with this one.
 func _on_hitbox_checker_body_entered(body: Node2D) -> void:
+	print("smth entered")
 	if body is Player:
+		print("is player")
 		if hitbox_on_cooldown:
 			return
 		hitbox_on_cooldown = true

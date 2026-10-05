@@ -1068,7 +1068,7 @@ tracks/2/path = NodePath("../Match/HUD/Traffic Lights/Green Light 1:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(2, 3),
+"times": PackedFloat32Array(2, 2.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -1104,7 +1104,7 @@ tracks/5/path = NodePath("../Match/HUD/Traffic Lights/Green Light 2:visible")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(2, 3),
+"times": PackedFloat32Array(2, 2.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -1140,7 +1140,7 @@ tracks/8/path = NodePath("../Match/HUD/Traffic Lights/Green Light 3:visible")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
-"times": PackedFloat32Array(2, 3),
+"times": PackedFloat32Array(2, 2.9),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
@@ -2471,6 +2471,7 @@ position = Vector2(320, 180)
 texture = ExtResource("41_gbx8y")
 
 [node name="1" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=1141964210]
+unique_name_in_owner = true
 visible = false
 position = Vector2(0, 28.46)
 
@@ -2487,6 +2488,7 @@ scale = Vector2(1.105, 1.105)
 texture = ExtResource("24_y2fpn")
 
 [node name="2" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=293248703]
+unique_name_in_owner = true
 visible = false
 position = Vector2(0, 28.46)
 
@@ -2503,6 +2505,7 @@ scale = Vector2(1.105, 1.105)
 texture = ExtResource("25_hup1r")
 
 [node name="3" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=1744378655]
+unique_name_in_owner = true
 visible = false
 position = Vector2(0, 28.46)
 
@@ -2519,6 +2522,7 @@ scale = Vector2(1.105, 1.105)
 texture = ExtResource("26_w3w8l")
 
 [node name="4" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=450878768]
+unique_name_in_owner = true
 visible = false
 position = Vector2(0, 28.46)
 
@@ -2535,6 +2539,7 @@ scale = Vector2(1.105, 1.105)
 texture = ExtResource("30_6f51d")
 
 [node name="5" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=926352571]
+unique_name_in_owner = true
 visible = false
 position = Vector2(0, 28.46)
 
@@ -2551,6 +2556,7 @@ scale = Vector2(1.105, 1.105)
 texture = ExtResource("31_bdx22")
 
 [node name="6" type="Node2D" parent="Match/HUD/Winner Pop up" unique_id=1329990781]
+unique_name_in_owner = true
 visible = false
 position = Vector2(0, 28.46)
 
@@ -2630,7 +2636,7 @@ visible = false
 position = Vector2(58, 334)
 texture = ExtResource("40_1mdks")
 
-[node name="Win Outfit 1" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=83146014]
+[node name="Bomb Outfit 1" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=83146014]
 unique_name_in_owner = true
 visible = false
 position = Vector2(122, 331)
@@ -2639,7 +2645,7 @@ sprite_frames = SubResource("SpriteFrames_0r677")
 animation = &"jump"
 autoplay = "idle"
 
-[node name="Win Outfit 2" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=94311810]
+[node name="Bomb Outfit 2" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=94311810]
 unique_name_in_owner = true
 visible = false
 position = Vector2(122.99999, 334.00003)
@@ -2648,7 +2654,7 @@ sprite_frames = SubResource("SpriteFrames_ixvf7")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="Win Outfit 3" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=1243259783]
+[node name="Bomb Outfit 3" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=1243259783]
 unique_name_in_owner = true
 visible = false
 position = Vector2(121.99999, 335)
@@ -2657,7 +2663,7 @@ sprite_frames = SubResource("SpriteFrames_bndst")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="Win Outfit 4" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=193763143]
+[node name="Bomb Outfit 4" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=193763143]
 unique_name_in_owner = true
 visible = false
 position = Vector2(123, 331.00003)
@@ -2666,7 +2672,7 @@ sprite_frames = SubResource("SpriteFrames_b0eb4")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="Win Outfit 5" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=560629803]
+[node name="Bomb Outfit 5" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=560629803]
 unique_name_in_owner = true
 visible = false
 position = Vector2(123, 334)
@@ -2675,7 +2681,7 @@ sprite_frames = SubResource("SpriteFrames_xru50")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="Win Outfit 6" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=1688224039]
+[node name="Bomb Outfit 6" type="AnimatedSprite2D" parent="Match/HUD/Bomb on" unique_id=1688224039]
 unique_name_in_owner = true
 visible = false
 position = Vector2(122, 333)

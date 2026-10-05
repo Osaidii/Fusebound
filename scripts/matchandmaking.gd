@@ -15,34 +15,34 @@ const MAP_1 := preload("uid://bymwcyrqq7kgc")
 @onready var controls: TextureButton = %Controls
 @onready var death_timer: Timer = %"Death Timer"
 @onready var bomb_text: Sprite2D = %"Bomb Text"
-@onready var outfit_1: AnimatedSprite2D = %"Outfit 1"
-@onready var outfit_2: AnimatedSprite2D = %"Outfit 2"
-@onready var outfit_3: AnimatedSprite2D = %"Outfit 3"
-@onready var outfit_4: AnimatedSprite2D = %"Outfit 4"
-@onready var outfit_5: AnimatedSprite2D = %"Outfit 5"
-@onready var outfit_6: AnimatedSprite2D = %"Outfit 6"
 @onready var timer_text: Label = %"Timer Text"
 @onready var winner_pop_up: Sprite2D = %"Winner Pop up"
-@onready var w_1: AnimatedSprite2D = %"Win Outfit 1"
-@onready var w_2: AnimatedSprite2D = %"Win Outfit 2"
-@onready var w_3: AnimatedSprite2D = %"Win Outfit 3"
-@onready var w_4: AnimatedSprite2D = %"Win Outfit 4"
-@onready var w_5: AnimatedSprite2D = %"Win Outfit 5"
-@onready var w_6: AnimatedSprite2D = %"Win Outfit 6"
+@onready var b_1: AnimatedSprite2D = %"Bomb Outfit 1"
+@onready var b_2: AnimatedSprite2D = %"Bomb Outfit 2"
+@onready var b_3: AnimatedSprite2D = %"Bomb Outfit 3"
+@onready var b_4: AnimatedSprite2D = %"Bomb Outfit 4"
+@onready var b_5: AnimatedSprite2D = %"Bomb Outfit 5"
+@onready var b_6: AnimatedSprite2D = %"Bomb Outfit 6"
+@onready var w_1: Node2D = %"1"
+@onready var w_2: Node2D = %"2"
+@onready var w_3: Node2D = %"3"
+@onready var w_4: Node2D = %"4"
+@onready var w_5: Node2D = %"5"
+@onready var w_6: Node2D = %"6"
 
 var match_running := false
 var winner: Player
 
 var players: Array[Player] = []
 var bomb_indicators: Array[AnimatedSprite2D]
-var win_indicators: Array[AnimatedSprite2D]
+var win_indicators: Array[Node2D]
 
 # This function sets up the scene.
 func _ready() -> void:
 	Transition.scene_in()
 	start.grab_focus()
 	players.resize(6)
-	bomb_indicators = [outfit_1, outfit_2, outfit_3, outfit_4, outfit_5, outfit_6]
+	bomb_indicators = [b_1, b_2, b_3, b_4, b_5, b_6]
 	win_indicators = [w_1, w_2, w_3, w_4, w_5, w_6]
 
 # This function gives the bomb randomly to another player.
@@ -115,12 +115,12 @@ func start_match() -> void:
 	timer_text.visible = true
 
 # This function instatiates player with data provided.
-func instantiate_player(outfit_number, controls_number, position: Vector2) -> Player:
+func instantiate_player(outfit_number, controls_number, set_position: Vector2) -> Player:
 	var instance  = PLAYER.instantiate()
 	instance.OUTFIT = outfit_number
 	instance.CONTROLS = controls_number
 	match_node.add_child(instance)
-	instance.global_position = position
+	instance.global_position = set_position
 	return instance
 
 # This function starts to instatiation process.
@@ -133,7 +133,7 @@ func instantiate_match() -> void:
 	matchmaking.visible = false
 	match_node.visible = true
 	var map_instance = instantiate_map()
-	var spawn_container: Node2D = map_instance.get_node("%SpawnPoints")
+	var spawn_container: Node2D = map_instance.get_child(0)
 	amount_of_players = min(amount_of_players, spawn_container.get_child_count())
 	var spawn_order := range(amount_of_players)
 	spawn_order.shuffle()
@@ -141,6 +141,12 @@ func instantiate_match() -> void:
 		var spawn_pos: Vector2 = spawn_container.get_child(spawn_order[i]).global_position
 		var player: Player = instantiate_player(i + 1, i + 1, spawn_pos)
 		players[i] = player
+	var living := get_living_players()
+	for i in living:
+		for j in living:
+			if i == j:
+				continue
+			i.add_collision_exception_with(j)
 
 # This function instantiaes the map.
 func instantiate_map():
@@ -245,7 +251,7 @@ func _on_remove_4_pressed() -> void:
 	point_4.get_child(2).visible = true
 	point_4.get_child(3).visible = false
 	point_5.get_child(2).visible = false
-	point_4.get_child(2).grab_focus()
+	point_4.get_child(3).grab_focus()
 	start.focus_neighbor_top = point_4.get_child(2).get_path()
 	back.focus_neighbor_top = point_4.get_child(2).get_path()
 	controls.focus_neighbor_top = point_4.get_child(2).get_path()
@@ -261,7 +267,7 @@ func _on_remove_5_pressed() -> void:
 	point_5.get_child(2).visible = true
 	point_5.get_child(3).visible = false
 	point_6.get_child(2).visible = false
-	point_5.get_child(2).grab_focus()
+	point_4.get_child(3).grab_focus()
 	start.focus_neighbor_top = point_5.get_child(2).get_path()
 	back.focus_neighbor_top = point_5.get_child(2).get_path()
 	controls.focus_neighbor_top = point_5.get_child(2).get_path()
@@ -274,7 +280,7 @@ func _on_remove_6_pressed() -> void:
 	point_6.get_child(1).visible = false
 	point_6.get_child(2).visible = true
 	point_6.get_child(3).visible = false
-	point_6.get_child(2).grab_focus()
+	point_5.get_child(3).grab_focus()
 	start.focus_neighbor_top = point_6.get_child(2).get_path()
 	back.focus_neighbor_top = point_6.get_child(2).get_path()
 	controls.focus_neighbor_top = point_6.get_child(2).get_path()
@@ -293,7 +299,6 @@ func _on_death_timer_timeout() -> void:
 	await get_tree().process_frame
 	random_bomb()
 
-
 # Returns a list of players that are currently alive.
 func get_living_players() -> Array[Player]:
 	var living: Array[Player] = []
@@ -301,3 +306,6 @@ func get_living_players() -> Array[Player]:
 		if p != null:
 			living.append(p)
 	return living
+
+func update_timer(number) -> void:
+	timer_text.text = str(number)

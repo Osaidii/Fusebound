@@ -35,6 +35,10 @@ window/stretch/scale_mode="integer"
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
+[global_group]
+
+hitbox=""
+
 [input]
 
 up1={
