@@ -18,245 +18,41 @@
 [ext_resource type="Texture2D" uid="uid://b7yimwsaymn38" path="res://assets/buttons/back hover.png" id="24_qjc1h"]
 [ext_resource type="FontFile" uid="uid://cmnkdnb8mttwc" path="res://assets/fonts/monogram.ttf" id="25_8s3t8"]
 
-[sub_resource type="Animation" id="Animation_oy07q"]
+[sub_resource type="Animation" id="Animation_o7mt6"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Background/Title:position")
+tracks/0/path = NodePath("Background/A Tag Game:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(322.575, 97)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Buttons/Play:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(219.57501, 203)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Buttons/Settings:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.001),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(224.29, 261.98), Vector2(224.29, 261.98)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Buttons/Exit:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(262.57495, 300)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Buttons/Back:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-55, 301)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("Messages/Error:position")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(104, 363)]
+"values": [Vector2(1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_fak3k"]
-resource_name = "back"
+[sub_resource type="Animation" id="Animation_xccyo"]
+resource_name = "animation"
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Background/Title:position")
+tracks/0/path = NodePath("Background/A Tag Game:scale")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.26666665, 0.9),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 0.5),
 "update": 0,
-"values": [Vector2(322.575, -67.8), Vector2(322.575, 97)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Buttons/Play:position")
-tracks/1/interp = 2
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0.26666665, 0.9),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(219.57501, 399), Vector2(219.57501, 203)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Buttons/Settings:position")
-tracks/2/interp = 2
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0.26666665, 0.9),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(224, 456), Vector2(224.29, 261.98)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Buttons/Exit:position")
-tracks/3/interp = 2
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0.26666665, 0.9),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(262.57495, 496.00003), Vector2(262.57495, 300)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Buttons/Back:position")
-tracks/4/interp = 2
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0.2, 0.56666666),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(18, 301), Vector2(-55, 301)]
-}
-
-[sub_resource type="Animation" id="Animation_4w47j"]
-resource_name = "create"
-
-[sub_resource type="Animation" id="Animation_8s3t8"]
-resource_name = "error"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Messages/Error:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.99),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(97, 104), Vector2(97, 238)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Messages/Error:self_modulate")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.3, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_c1qw6"]
-resource_name = "settings"
-length = 1.2
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Background/Title:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(322.575, 97), Vector2(322.575, -67.8)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Buttons/Play:position")
-tracks/1/interp = 2
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(219.57501, 203), Vector2(219.57501, 399)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Buttons/Settings:position")
-tracks/2/interp = 2
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(224.29, 261.98), Vector2(224, 456)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Buttons/Exit:position")
-tracks/3/interp = 2
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.7),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(262.57495, 300), Vector2(262.57495, 496.00003)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Buttons/Back:position")
-tracks/4/interp = 2
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0.56666666, 1.1666666),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(-55, 301), Vector2(18, 301)]
+"values": [Vector2(0.9, 0.9), Vector2(1.1, 1.1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fak3k"]
 _data = {
-&"RESET": SubResource("Animation_oy07q"),
-&"back": SubResource("Animation_fak3k"),
-&"create": SubResource("Animation_4w47j"),
-&"error": SubResource("Animation_8s3t8"),
-&"settings": SubResource("Animation_c1qw6")
+&"RESET": SubResource("Animation_o7mt6"),
+&"animation": SubResource("Animation_xccyo")
 }
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_km7eu"]
@@ -672,6 +468,11 @@ script = ExtResource("1_5hgee")
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_fak3k")
 
+[node name="A Tag Game" type="AnimationPlayer" parent="." unique_id=802617194]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_fak3k")
+autoplay = &"animation"
+
 [node name="Background" type="Node2D" parent="." unique_id=375134264]
 
 [node name="Sky" type="TileMapLayer" parent="Background" unique_id=152189789]
@@ -691,13 +492,27 @@ position = Vector2(322.575, 97)
 scale = Vector2(3.61, 3.61)
 texture = ExtResource("4_oy07q")
 
+[node name="A Tag Game" type="Label" parent="Background" unique_id=1089144824]
+offset_left = 410.99997
+offset_top = 142.0
+offset_right = 607.00006
+offset_bottom = 184.0
+rotation = -0.38397244
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("25_8s3t8")
+theme_override_font_sizes/font_size = 40
+text = "A Tag Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Messages" type="Node2D" parent="." unique_id=763375319]
 
 [node name="Error" type="Label" parent="Messages" unique_id=980389287]
-offset_left = 104.0
-offset_top = 363.0
-offset_right = 601.0
-offset_bottom = 399.00018
+visible = false
+offset_left = 97.0
+offset_top = 104.0
+offset_right = 594.0
+offset_bottom = 140.00018
 theme_override_colors/font_color = Color(1, 0, 0.12941177, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("25_8s3t8")

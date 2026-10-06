@@ -963,7 +963,6 @@ wait_time = 0.5
 
 [node name="Hitbox Checker" type="Area2D" parent="." unique_id=1736836037]
 collision_layer = 0
-collision_mask = 2
 
 [node name="Hitbox" type="CollisionShape2D" parent="Hitbox Checker" unique_id=284729917]
 visible = false

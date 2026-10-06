@@ -29,6 +29,9 @@ const MAP_1 := preload("uid://bymwcyrqq7kgc")
 @onready var w_4: Node2D = %"4"
 @onready var w_5: Node2D = %"5"
 @onready var w_6: Node2D = %"6"
+@onready var back_to_menu: TextureButton = %"Back to Menu"
+@onready var controls_panel: Node2D = %"Controls Panel"
+@onready var back_from_controls: TextureButton = %"Back from Controls"
 
 var match_running := false
 var winner: Player
@@ -45,8 +48,14 @@ func _ready() -> void:
 	bomb_indicators = [b_1, b_2, b_3, b_4, b_5, b_6]
 	win_indicators = [w_1, w_2, w_3, w_4, w_5, w_6]
 
+# This function updates the timer.
+func update_timer(number) -> void:
+	timer_text.text = str(number)
+
 # This function gives the bomb randomly to another player.
 func random_bomb() -> void:
+	if not match_running:
+		return
 	var living := get_living_players()
 	if living.is_empty():
 		return
@@ -61,6 +70,7 @@ func random_bomb() -> void:
 	death_timer.start()
 	anims.play("timer")
 
+# This function kills a player.
 func kill_player(player) -> void:
 	if player == null:
 		return
@@ -69,17 +79,10 @@ func kill_player(player) -> void:
 		players[index] = null
 	player.queue_free()
 
-# This function does the match instatiation.
-func _on_start_pressed() -> void:
-	Transition.scene_out()
-	await get_tree().create_timer(1.0).timeout
-	instantiate_match()
-	await get_tree().create_timer(0.1).timeout
-	Transition.scene_in()
-	await get_tree().create_timer(1.0).timeout
-	start_match()
-
+# This function shows the winner.
 func show_winner() -> void:
+	back_to_menu.visible = true
+	back_to_menu.grab_focus()
 	bomb_text.visible = false
 	timer_text.visible = false
 	for s in bomb_indicators:
@@ -96,12 +99,18 @@ func show_winner() -> void:
 			winner = p
 			break
 	var index := players.find(winner)
+	if index == -1:
+		return
 	win_indicators[index].visible = true
 	winner_pop_up.visible = true
-	await get_tree().create_timer(10.0).timeout
-	if not is_inside_tree():
-		return
-	match_end()
+
+# This function returns a list of players that are currently alive.
+func get_living_players() -> Array[Player]:
+	var living: Array[Player] = []
+	for p in players:
+		if p != null:
+			living.append(p)
+	return living
 
 # This function starts the match and does the countdown.
 func start_match() -> void:
@@ -115,12 +124,13 @@ func start_match() -> void:
 	timer_text.visible = true
 
 # This function instatiates player with data provided.
-func instantiate_player(outfit_number, controls_number, set_position: Vector2) -> Player:
+func instantiate_player(outfit_number, controls_number, spawn_position: Vector2) -> Player:
 	var instance  = PLAYER.instantiate()
 	instance.OUTFIT = outfit_number
 	instance.CONTROLS = controls_number
 	match_node.add_child(instance)
-	instance.global_position = set_position
+	instance.global_position = spawn_position
+	instance.tag_changed.connect(_on_player_tag_changed)
 	return instance
 
 # This function starts to instatiation process.
@@ -135,7 +145,8 @@ func instantiate_match() -> void:
 	var map_instance = instantiate_map()
 	var spawn_container: Node2D = map_instance.get_child(0)
 	amount_of_players = min(amount_of_players, spawn_container.get_child_count())
-	var spawn_order := range(amount_of_players)
+	amount_of_players = min(amount_of_players, players.size())
+	var spawn_order := range(spawn_container.get_child_count())
 	spawn_order.shuffle()
 	for i in amount_of_players:
 		var spawn_pos: Vector2 = spawn_container.get_child(spawn_order[i]).global_position
@@ -154,16 +165,11 @@ func instantiate_map():
 	match_node.add_child(instance)
 	return instance
 
-# This function takes the user back to the Main Menu.
-func _on_back_pressed() -> void:
-	Transition.scene_out()
-	await get_tree().create_timer(1.0).timeout
-	get_tree().change_scene_to_file("res://scenes/main menu.tscn")
-
 # This function is the termination and deletion of the match.
 func match_end() -> void:
 	Transition.scene_out()
 	await get_tree().create_timer(1.0).timeout
+	back_to_menu.visible = false
 	for i in range(1, match_node.get_child_count()):
 		match_node.get_child(i).queue_free()
 	match_node.visible = false
@@ -172,6 +178,9 @@ func match_end() -> void:
 	Transition.scene_in()
 	start.grab_focus()
 	winner = null
+	match_running = false
+	timer_text.visible = false
+	bomb_text.visible = false
 	players.fill(null)
 	winner_pop_up.visible = false
 
@@ -251,7 +260,7 @@ func _on_remove_4_pressed() -> void:
 	point_4.get_child(2).visible = true
 	point_4.get_child(3).visible = false
 	point_5.get_child(2).visible = false
-	point_4.get_child(3).grab_focus()
+	point_3.get_child(3).grab_focus()
 	start.focus_neighbor_top = point_4.get_child(2).get_path()
 	back.focus_neighbor_top = point_4.get_child(2).get_path()
 	controls.focus_neighbor_top = point_4.get_child(2).get_path()
@@ -288,24 +297,56 @@ func _on_remove_6_pressed() -> void:
 	point_5.get_child(3).focus_neighbor_bottom = point_6.get_child(2).get_path()
 	point_3.get_child(3).focus_neighbor_bottom = point_6.get_child(2).get_path()
 
+# This function runs when the bomb emplodes.
 func _on_death_timer_timeout() -> void:
-	if get_living_players().size() - 1 <= 1:
+	if not match_running:
+		return
+	var living := get_living_players()
+	if living.size() - 1 <= 1:
+		for p in living:
+			if p.IS_TAGGER:
+				kill_player(p)
+				break
+		await get_tree().process_frame
 		show_winner()
 		return
-	for p in get_living_players():
+	for p in living:
 		if p.IS_TAGGER:
 			kill_player(p)
 			break
 	await get_tree().process_frame
 	random_bomb()
 
-# Returns a list of players that are currently alive.
-func get_living_players() -> Array[Player]:
-	var living: Array[Player] = []
-	for p in players:
-		if p != null:
-			living.append(p)
-	return living
+# This function takes the user back to the Main Menu.
+func _on_back_pressed() -> void:
+	Transition.scene_out()
+	await get_tree().create_timer(1.0).timeout
+	get_tree().change_scene_to_file("res://scenes/main menu.tscn")
 
-func update_timer(number) -> void:
-	timer_text.text = str(number)
+# This function does the match instatiation.
+func _on_start_pressed() -> void:
+	Transition.scene_out()
+	await get_tree().create_timer(1.0).timeout
+	instantiate_match()
+	await get_tree().create_timer(0.1).timeout
+	Transition.scene_in()
+	await get_tree().create_timer(1.0).timeout
+	start_match()
+
+# this function runs when the back button is pressed after match ends.
+func _on_back_to_menu_pressed() -> void:
+	match_end()
+
+# This function runs when the bomb is passed to a differenet player.
+func _on_player_tag_changed() -> void:
+	for i in bomb_indicators.size():
+		bomb_indicators[i].visible = players[i] != null and players[i].IS_TAGGER
+
+func _on_back_from_controls_pressed() -> void:
+	anims.play_backwards("controls")
+	start.grab_focus()
+
+func _on_controls_pressed() -> void:
+	print("here")
+	anims.play("controls")
+	back_from_controls.grab_focus()

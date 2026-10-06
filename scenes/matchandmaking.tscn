@@ -37,10 +37,17 @@
 [ext_resource type="Texture2D" uid="uid://cgwpi1bm3hjfn" path="res://assets/titles/player 6.png" id="32_2maol"]
 [ext_resource type="FontFile" uid="uid://cmnkdnb8mttwc" path="res://assets/fonts/monogram.ttf" id="36_lqmox"]
 [ext_resource type="Texture2D" uid="uid://gju78764m0k7" path="res://assets/titles/red light.png" id="37_q1dib"]
+[ext_resource type="Texture2D" uid="uid://b0thoqnvpesr2" path="res://assets/titles/panel.png" id="37_y2fpn"]
 [ext_resource type="Texture2D" uid="uid://b1um7jscwjtd3" path="res://assets/titles/yellow light.png" id="38_1mdks"]
+[ext_resource type="Texture2D" uid="uid://6d6uae8g28vc" path="res://assets/controls/WASD.png" id="38_hup1r"]
 [ext_resource type="Texture2D" uid="uid://ipt35rbtfgq4" path="res://assets/titles/green light.png" id="39_gbx8y"]
+[ext_resource type="Texture2D" uid="uid://bv26qjiitqrve" path="res://assets/controls/Arrow Keys.png" id="39_w3w8l"]
 [ext_resource type="Texture2D" uid="uid://b8vloxgd4ak6p" path="res://assets/titles/Bomb is on.png" id="40_1mdks"]
+[ext_resource type="Texture2D" uid="uid://bclo6x4hska3h" path="res://assets/controls/TFGH.png" id="40_x807v"]
 [ext_resource type="Texture2D" uid="uid://bhxvuvj6ipb0j" path="res://assets/titles/winner.png" id="41_gbx8y"]
+[ext_resource type="Texture2D" uid="uid://d314mu3xvf1ff" path="res://assets/controls/IJKL.png" id="41_u8j7f"]
+[ext_resource type="Texture2D" uid="uid://d0ry04t4pvmdg" path="res://assets/controls/Symbols.png" id="42_xnqjf"]
+[ext_resource type="Texture2D" uid="uid://bj4mdy0eoy1i3" path="res://assets/controls/Numpad.png" id="43_6f51d"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
 atlas = ExtResource("11_r17nh")
@@ -1033,6 +1040,182 @@ tracks/10/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("%Controls Panel:visible")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("%Controls Panel:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_y2fpn"]
+resource_name = "controls"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Controls Panel:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%Controls Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Buttons:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Buttons:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Add Players:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Add Players:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_hup1r"]
+resource_name = "controls_off"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Controls Panel:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%Controls Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Buttons:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Buttons:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Add Players:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Add Players:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_5k4tu"]
 resource_name = "countdown"
@@ -1269,6 +1452,8 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_q1dib"]
 _data = {
 &"RESET": SubResource("Animation_fn7kg"),
+&"controls": SubResource("Animation_y2fpn"),
+&"controls_off": SubResource("Animation_hup1r"),
 &"countdown": SubResource("Animation_5k4tu"),
 &"remove error": SubResource("Animation_s0sb5"),
 &"timer": SubResource("Animation_1mdks")
@@ -2421,7 +2606,6 @@ focus_neighbor_left = NodePath("../Back")
 focus_neighbor_top = NodePath("../../Add Players/Point 3/Add")
 focus_neighbor_right = NodePath("../Start")
 focus_next = NodePath("../Start")
-disabled = true
 texture_normal = ExtResource("8_47ed3")
 texture_pressed = ExtResource("9_3v5kv")
 texture_hover = ExtResource("10_2xi81")
@@ -2445,6 +2629,86 @@ vertical_alignment = 1
 [node name="Anims" type="AnimationPlayer" parent="Matchmaking" unique_id=610888069]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_q1dib")
+
+[node name="Controls Panel" type="Node2D" parent="Matchmaking" unique_id=1465115609]
+unique_name_in_owner = true
+visible = false
+modulate = Color(1, 1, 1, 0)
+position = Vector2(-128, -62)
+scale = Vector2(1.415, 1.415)
+
+[node name="Panel" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=77942373]
+position = Vector2(319, 171)
+texture = ExtResource("37_y2fpn")
+
+[node name="1" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=1754854891]
+position = Vector2(226, 149)
+texture = ExtResource("38_hup1r")
+
+[node name="2" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=1206897457]
+position = Vector2(308, 149)
+texture = ExtResource("39_w3w8l")
+
+[node name="3" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=15279863]
+position = Vector2(397, 149)
+texture = ExtResource("40_x807v")
+
+[node name="4" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=1194798963]
+position = Vector2(226, 226.5)
+texture = ExtResource("41_u8j7f")
+
+[node name="5" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=714843149]
+position = Vector2(308, 226.5)
+texture = ExtResource("42_xnqjf")
+
+[node name="6" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=2138134092]
+position = Vector2(397, 226.5)
+texture = ExtResource("43_6f51d")
+
+[node name="Plate1" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=1116981503]
+position = Vector2(226, 113)
+scale = Vector2(0.825, 0.825)
+texture = ExtResource("24_y2fpn")
+
+[node name="Plate2" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=139191363]
+position = Vector2(308, 113)
+scale = Vector2(0.825, 0.825)
+texture = ExtResource("25_hup1r")
+
+[node name="Plate3" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=1112331777]
+position = Vector2(397, 112.425)
+scale = Vector2(0.825, 0.825)
+texture = ExtResource("26_w3w8l")
+
+[node name="Plate4" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=634868289]
+position = Vector2(226, 192.425)
+scale = Vector2(0.825, 0.825)
+texture = ExtResource("30_6f51d")
+
+[node name="Plate5" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=1367586594]
+position = Vector2(308, 192.85)
+scale = Vector2(0.825, 0.825)
+texture = ExtResource("31_bdx22")
+
+[node name="Plate6" type="Sprite2D" parent="Matchmaking/Controls Panel" unique_id=52309529]
+position = Vector2(398, 192.425)
+scale = Vector2(0.825, 0.825)
+texture = ExtResource("32_2maol")
+
+[node name="Back from Controls" type="TextureButton" parent="Matchmaking/Controls Panel" unique_id=1243486776]
+unique_name_in_owner = true
+offset_left = 106.71378
+offset_top = 262.89755
+offset_right = 124.71378
+offset_bottom = 280.89755
+scale = Vector2(1.287, 1.287)
+focus_neighbor_top = NodePath("../../Add Players/Point 3/Add")
+focus_neighbor_right = NodePath("../Controls")
+focus_next = NodePath("../Controls")
+texture_normal = ExtResource("5_dh83l")
+texture_pressed = ExtResource("6_wke1h")
+texture_hover = ExtResource("7_vnuik")
+texture_focused = ExtResource("7_vnuik")
 
 [node name="Match" type="Node2D" parent="." unique_id=161910445]
 unique_name_in_owner = true
@@ -2695,6 +2959,22 @@ unique_name_in_owner = true
 wait_time = 25.0
 one_shot = true
 
+[node name="Back to Menu" type="TextureButton" parent="Match/HUD" unique_id=444373203]
+unique_name_in_owner = true
+visible = false
+offset_left = 22.00003
+offset_top = 310.0
+offset_right = 40.00003
+offset_bottom = 328.0
+scale = Vector2(1.817, 1.817)
+focus_neighbor_top = NodePath("../../Add Players/Point 3/Add")
+focus_neighbor_right = NodePath("../Controls")
+focus_next = NodePath("../Controls")
+texture_normal = ExtResource("5_dh83l")
+texture_pressed = ExtResource("6_wke1h")
+texture_hover = ExtResource("7_vnuik")
+texture_focused = ExtResource("7_vnuik")
+
 [connection signal="pressed" from="Matchmaking/Add Players/Point 3/Add" to="." method="_on_add_3_pressed"]
 [connection signal="pressed" from="Matchmaking/Add Players/Point 3/Remove" to="." method="_on_remove_3_pressed"]
 [connection signal="pressed" from="Matchmaking/Add Players/Point 4/Add" to="." method="_on_add_4_pressed"]
@@ -2705,4 +2985,7 @@ one_shot = true
 [connection signal="pressed" from="Matchmaking/Add Players/Point 6/Remove" to="." method="_on_remove_6_pressed"]
 [connection signal="pressed" from="Matchmaking/Buttons/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Matchmaking/Buttons/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Matchmaking/Buttons/Controls" to="." method="_on_controls_pressed"]
+[connection signal="pressed" from="Matchmaking/Controls Panel/Back from Controls" to="." method="_on_back_from_controls_pressed"]
 [connection signal="timeout" from="Match/HUD/Death Timer" to="." method="_on_death_timer_timeout"]
+[connection signal="pressed" from="Match/HUD/Back to Menu" to="." method="_on_back_to_menu_pressed"]

@@ -5,8 +5,8 @@ extends CharacterBody2D
 @export var CONTROLS := 1
 @export var OUTFIT := 1
 @export_category("Stats")
-@export var NORMAL_SPEED := 110
-@export var TAGGER_SPEED := 140
+@export var NORMAL_SPEED := 100
+@export var TAGGER_SPEED := 130
 @export var JUMP_VELOCITY := -240.0
 @export_category("Data")
 @export var CAN_CONTROL := false
@@ -29,6 +29,8 @@ var direction := 0.0
 var coyote_time_activated := false
 var hitbox_on_cooldown := false
 var facing_right := true
+
+signal tag_changed
 
 # This function sets the player up.
 func _ready() -> void:
@@ -140,19 +142,18 @@ func _anims() -> void:
 
 # This function checks whether another Player is Overlapping with this one.
 func _on_hitbox_checker_body_entered(body: Node2D) -> void:
-	print("smth entered")
 	if body is Player:
-		print("is player")
-		if hitbox_on_cooldown:
+		if hitbox_on_cooldown or body.hitbox_on_cooldown:
 			return
-		hitbox_on_cooldown = true
 		hitbox_cooldown_timer.start()
+		hitbox_on_cooldown = true
 		if not self.IS_TAGGER and body.IS_TAGGER:
 			IS_TAGGER = true
 			body.IS_TAGGER = false
 		elif self.IS_TAGGER and not body.IS_TAGGER:
 			IS_TAGGER = false 
 			body.IS_TAGGER = true
+	tag_changed.emit()
 
 # This resets the collision after its once activated.
 func _on_hitbox_cooldown_timer_timeout() -> void:
