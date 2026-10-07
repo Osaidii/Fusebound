@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://bfeyad0sp2i73" path="res://assets/buttons/settings hover.png" id="10_e37nt"]
 [ext_resource type="Texture2D" uid="uid://csnbn88d7w46c" path="res://assets/buttons/exit pressed.png" id="13_csewp"]
 [ext_resource type="Texture2D" uid="uid://bsi351viqt2ev" path="res://assets/buttons/exit hover.png" id="14_i07pi"]
+[ext_resource type="Texture2D" uid="uid://b0thoqnvpesr2" path="res://assets/titles/panel.png" id="18_xccyo"]
 [ext_resource type="Texture2D" uid="uid://djokrwtcfgbjc" path="res://assets/buttons/back pressed.png" id="23_tdh66"]
 [ext_resource type="Texture2D" uid="uid://b7yimwsaymn38" path="res://assets/buttons/back hover.png" id="24_qjc1h"]
 [ext_resource type="FontFile" uid="uid://cmnkdnb8mttwc" path="res://assets/fonts/monogram.ttf" id="25_8s3t8"]
@@ -23,7 +24,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Background/A Tag Game:scale")
+tracks/0/path = NodePath("Buttons/A Tag Game:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -39,7 +40,7 @@ loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Background/A Tag Game:scale")
+tracks/0/path = NodePath("Buttons/A Tag Game:scale")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -53,6 +54,132 @@ tracks/0/keys = {
 _data = {
 &"RESET": SubResource("Animation_o7mt6"),
 &"animation": SubResource("Animation_xccyo")
+}
+
+[sub_resource type="Animation" id="Animation_uhvra"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Back:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-55, 301)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%A Tag Game/../Buttons:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%A Tag Game/../Settings:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 365.09)]
+}
+
+[sub_resource type="Animation" id="Animation_jxsxo"]
+resource_name = "settings"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Back:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-55, 301), Vector2(15, 301)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%A Tag Game/../Buttons:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -372)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%A Tag Game/../Settings:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 362), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_yl5mm"]
+resource_name = "settings_off"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("%Back:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(15, 301), Vector2(-55, 301)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("%A Tag Game/../Buttons:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, -372), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("%A Tag Game/../Settings:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 362)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yl5mm"]
+_data = {
+&"RESET": SubResource("Animation_uhvra"),
+&"settings": SubResource("Animation_jxsxo"),
+&"settings_off": SubResource("Animation_yl5mm")
 }
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_km7eu"]
@@ -464,14 +591,15 @@ sources/1 = SubResource("TileSetAtlasSource_c1qw6")
 [node name="MainMenu" type="Node2D" unique_id=625900902]
 script = ExtResource("1_5hgee")
 
-[node name="Anims" type="AnimationPlayer" parent="." unique_id=19570868]
-unique_name_in_owner = true
-libraries/ = SubResource("AnimationLibrary_fak3k")
-
 [node name="A Tag Game" type="AnimationPlayer" parent="." unique_id=802617194]
 unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_fak3k")
 autoplay = &"animation"
+
+[node name="Anims" type="AnimationPlayer" parent="." unique_id=8382410]
+unique_name_in_owner = true
+root_node = NodePath("../A Tag Game")
+libraries/ = SubResource("AnimationLibrary_yl5mm")
 
 [node name="Background" type="Node2D" parent="." unique_id=375134264]
 
@@ -486,24 +614,6 @@ position = Vector2(380, -127)
 scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AAD5/wgAAAAAAAAAAAD5/wkAAAAAAAEAAAD5/woAAAAAAAEAAAD6/wgAAAAAAAAAAAD7/wMAAAACAAUAAAD7/wcAAAAAAAAAAAD8/wIAAAADAAQAAAD8/wMAAAADAAUAAAD8/wUAAAADAAcAAAD8/wYAAAADAAgAAAD8/wcAAAAAAAAAAAD9/wIAAAAEAAQAAAD9/wMAAAAEAAUAAAD9/wQAAAAEAAYAAAD+/wIAAAAAAAAAAAD+/wMAAAAAAAEAAAD+/wgAAAABAAQAAAD+/woAAAAAAAEAAAD//wIAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAIAAAAAAAAAAAABAAMAAAAAAAEAAAABAAYAAAAAAAMAAAABAAcAAAAAAAQAAAABAAgAAAAAAAUAAAACAAIAAAAAAAAAAAACAAMAAAAAAAEAAAADAAIAAAAAAAAAAAADAAMAAAAAAAEAAAAFAAkAAAAAAAEAAAD4/wkAAAAAAAAAAAD4/woAAAAAAAEAAAD5/wQAAQABAAAAAAD6/wQAAQACAAAAAAD6/wkAAAAAAAEAAAD6/woAAAAAAAEAAAD7/wIAAAACAAQAAAD7/wQAAAACAAYAAAD7/wgAAAAAAAEAAAD7/wkAAAAAAAEAAAD7/woAAAAAAAEAAAD8/wQAAAADAAYAAAD8/wgAAAAAAAEAAAD8/wkAAAAAAAEAAAD8/woAAAAAAAEAAAD9/wkAAAAAAAAAAAD9/woAAAAAAAEAAAD+/wkAAAAAAAAAAAD//wMAAAAAAAEAAAD//wkAAAAAAAAAAAD//woAAAAAAAEAAAAAAAMAAAAAAAEAAAAAAAQAAAAAAAEAAAAAAAkAAAAAAAAAAAAAAAoAAAAAAAEAAAABAAQAAAAAAAEAAAABAAkAAAAAAAAAAAABAAoAAAAAAAEAAAACAAQAAAAAAAEAAAACAAkAAAAAAAAAAAACAAoAAAAAAAEAAAADAAQAAAAAAAEAAAADAAgAAAAAAAAAAAADAAkAAAAAAAEAAAADAAoAAAAAAAEAAAAEAAIAAAAAAAAAAAAEAAMAAAAAAAEAAAAEAAQAAAAAAAEAAAAEAAgAAAAAAAAAAAAEAAkAAAAAAAEAAAAEAAoAAAAAAAEAAAAFAAMAAAAAAAAAAAAFAAQAAAAAAAEAAAAFAAgAAAAAAAAAAAAFAAoAAAAAAAEAAAA=")
 tile_set = SubResource("TileSet_fak3k")
-
-[node name="Title" type="Sprite2D" parent="Background" unique_id=2048913141]
-position = Vector2(322.575, 97)
-scale = Vector2(3.61, 3.61)
-texture = ExtResource("4_oy07q")
-
-[node name="A Tag Game" type="Label" parent="Background" unique_id=1089144824]
-offset_left = 410.99997
-offset_top = 142.0
-offset_right = 607.00006
-offset_bottom = 184.0
-rotation = -0.38397244
-theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("25_8s3t8")
-theme_override_font_sizes/font_size = 40
-text = "A Tag Game"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="Messages" type="Node2D" parent="." unique_id=763375319]
 
@@ -571,13 +681,193 @@ texture_pressed = ExtResource("13_csewp")
 texture_hover = ExtResource("14_i07pi")
 texture_focused = ExtResource("14_i07pi")
 
-[node name="Back" type="TextureButton" parent="Buttons" unique_id=1832629436]
+[node name="Title" type="Sprite2D" parent="Buttons" unique_id=2048913141]
+position = Vector2(322.575, 97)
+scale = Vector2(3.61, 3.61)
+texture = ExtResource("4_oy07q")
+
+[node name="A Tag Game" type="Label" parent="Buttons" unique_id=1089144824]
+offset_left = 410.99997
+offset_top = 142.0
+offset_right = 607.00006
+offset_bottom = 184.0
+rotation = -0.38397244
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("25_8s3t8")
+theme_override_font_sizes/font_size = 40
+text = "A Tag Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" type="Control" parent="." unique_id=833629364]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 365.09
+offset_bottom = 365.09
+
+[node name="Panel" type="Sprite2D" parent="Settings" unique_id=935284788]
+position = Vector2(319, 171)
+scale = Vector2(1.48, 1.48)
+texture = ExtResource("18_xccyo")
+
+[node name="Settings" type="Label" parent="Settings" unique_id=1701075670]
+layout_mode = 0
+offset_left = 163.0
+offset_top = 44.910004
+offset_right = 460.0
+offset_bottom = 123.91
+theme_override_constants/outline_size = 19
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("25_8s3t8")
+theme_override_font_sizes/font_size = 99
+text = "SETTINGS"
+
+[node name="Window Mode" type="Label" parent="Settings" unique_id=29910832]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 128.91
+offset_right = 257.0
+offset_bottom = 156.91
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("25_8s3t8")
+theme_override_font_sizes/font_size = 34
+text = "Window Mode"
+
+[node name="WindowButton" type="OptionButton" parent="Settings/Window Mode" unique_id=2060894011]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 236.0
+offset_top = 5.9999995
+offset_right = 430.0
+offset_bottom = 37.0
+scale = Vector2(0.63, 0.63)
+focus_neighbor_left = NodePath("../../../Back")
+focus_neighbor_bottom = NodePath("../../VSync/Vsync Button")
+selected = 2
+item_count = 4
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Maximized"
+popup/item_1/id = 1
+popup/item_2/text = "Fullscreen"
+popup/item_2/id = 2
+popup/item_3/text = "Exclusive Fullscreen"
+popup/item_3/id = 3
+
+[node name="VSync" type="Label" parent="Settings" unique_id=115149212]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 155.91
+offset_right = 180.0
+offset_bottom = 183.91
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("25_8s3t8")
+theme_override_font_sizes/font_size = 34
+text = "VSync"
+
+[node name="Vsync Button" type="CheckButton" parent="Settings/VSync" unique_id=403816866]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 274.0
+offset_top = 5.0
+offset_right = 318.0
+offset_bottom = 29.0
+focus_neighbor_left = NodePath("../../../Back")
+focus_neighbor_top = NodePath("../../Window Mode/WindowButton")
+focus_neighbor_bottom = NodePath("../../Limit FPS/Limit Button")
+button_pressed = true
+
+[node name="Limit FPS" type="Label" parent="Settings" unique_id=231644355]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 183.91
+offset_right = 231.0
+offset_bottom = 211.91
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("25_8s3t8")
+theme_override_font_sizes/font_size = 34
+text = "Limit FPS"
+
+[node name="Limit Button" type="CheckButton" parent="Settings/Limit FPS" unique_id=2031600532]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 274.0
+offset_top = 3.0
+offset_right = 318.0
+offset_bottom = 27.0
+focus_neighbor_left = NodePath("../../../Back")
+focus_neighbor_top = NodePath("../../VSync/Vsync Button")
+focus_neighbor_bottom = NodePath("../../FPS Cap/Cap Button")
+
+[node name="FPS Cap" type="Label" parent="Settings" unique_id=1497061470]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 212.91
+offset_right = 205.0
+offset_bottom = 240.91
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("25_8s3t8")
+theme_override_font_sizes/font_size = 34
+text = "FPS Cap"
+
+[node name="Cap Button" type="OptionButton" parent="Settings/FPS Cap" unique_id=1880926274]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 236.99998
+offset_top = 6.0000005
+offset_right = 431.0
+offset_bottom = 37.0
+scale = Vector2(0.63, 0.63)
+focus_neighbor_left = NodePath("../../../Back")
+focus_neighbor_top = NodePath("../../Limit FPS/Limit Button")
+focus_neighbor_bottom = NodePath("../../Master Volume/Slider")
+disabled = true
+selected = 1
+item_count = 5
+popup/item_0/text = "30"
+popup/item_0/id = 0
+popup/item_1/text = "60"
+popup/item_1/id = 1
+popup/item_2/text = "120"
+popup/item_2/id = 2
+popup/item_3/text = "144"
+popup/item_3/id = 3
+popup/item_4/text = "180"
+popup/item_4/id = 4
+
+[node name="Master Volume" type="Label" parent="Settings" unique_id=1169602551]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 238.91
+offset_right = 282.0
+offset_bottom = 266.91
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("25_8s3t8")
+theme_override_font_sizes/font_size = 34
+text = "Master Volume"
+
+[node name="Slider" type="HSlider" parent="Settings/Master Volume" unique_id=124730442]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 237.0
+offset_top = -2.0
+offset_right = 358.0
+offset_bottom = 38.0
+focus_neighbor_left = NodePath("../../../Back")
+focus_neighbor_top = NodePath("../../FPS Cap/Cap Button")
+focus_neighbor_bottom = NodePath("../../../Back")
+max_value = 10.0
+value = 8.0
+
+[node name="Back" type="TextureButton" parent="." unique_id=1832629436]
 unique_name_in_owner = true
 offset_left = -55.0
 offset_top = 301.0
 offset_right = -37.0
 offset_bottom = 319.00003
-scale = Vector2(2.3823528, 2.3823528)
+scale = Vector2(2.092, 2.092)
+focus_neighbor_top = NodePath("../Settings/Window Mode/WindowButton")
+focus_neighbor_right = NodePath("../Settings/Master Volume/Slider")
 texture_normal = ExtResource("8_fak3k")
 texture_pressed = ExtResource("23_tdh66")
 texture_hover = ExtResource("24_qjc1h")
@@ -586,4 +876,9 @@ texture_focused = ExtResource("24_qjc1h")
 [connection signal="pressed" from="Buttons/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Buttons/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="Buttons/Exit" to="." method="_on_exit_pressed"]
-[connection signal="pressed" from="Buttons/Back" to="." method="_on_back_pressed"]
+[connection signal="item_selected" from="Settings/Window Mode/WindowButton" to="." method="_on_window_button_item_selected"]
+[connection signal="toggled" from="Settings/VSync/Vsync Button" to="." method="_on_vsync_button_toggled"]
+[connection signal="toggled" from="Settings/Limit FPS/Limit Button" to="." method="_on_limit_button_toggled"]
+[connection signal="item_selected" from="Settings/FPS Cap/Cap Button" to="." method="_on_cap_button_item_selected"]
+[connection signal="value_changed" from="Settings/Master Volume/Slider" to="." method="_on_slider_value_changed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

@@ -2,6 +2,7 @@ extends Node2D
 
 const PLAYER := preload("uid://ct1ysgutbxa0y")
 const MAP_1 := preload("uid://bymwcyrqq7kgc")
+const EXPLOSION = preload("uid://tyk4ukbrhgg8")
 
 @onready var matchmaking: Node2D = %Matchmaking
 @onready var match_node: Node2D = %Match
@@ -48,6 +49,7 @@ func _ready() -> void:
 	bomb_indicators = [b_1, b_2, b_3, b_4, b_5, b_6]
 	win_indicators = [w_1, w_2, w_3, w_4, w_5, w_6]
 
+
 # This function updates the timer.
 func update_timer(number) -> void:
 	timer_text.text = str(number)
@@ -78,6 +80,13 @@ func kill_player(player) -> void:
 	if index != -1:
 		players[index] = null
 	player.queue_free()
+	var instance  = EXPLOSION.instantiate()
+	match_node.add_child(instance)
+	instance.global_position = player.global_position
+	instance.emitting = true
+	match_node.get_child(1).screen_shake(4, 0.75)
+	await get_tree().create_timer(2.0).timeout
+	instance.queue_free()
 
 # This function shows the winner.
 func show_winner() -> void:
@@ -115,13 +124,19 @@ func get_living_players() -> Array[Player]:
 # This function starts the match and does the countdown.
 func start_match() -> void:
 	anims.play("countdown")
-	await get_tree().create_timer(3.0).timeout
+	await get_tree().create_timer(1.0).timeout
+	match_node.get_child(1).screen_shake(1, 0.5)
+	await get_tree().create_timer(1.0).timeout
+	match_node.get_child(1).screen_shake(1, 0.5)
+	await get_tree().create_timer(1.0).timeout
+	match_node.get_child(1).screen_shake(1, 0.5)
 	for p in get_living_players():
 		p.CAN_CONTROL = true
 	match_running = true
 	random_bomb()
 	bomb_text.visible = true
 	timer_text.visible = true
+
 
 # This function instatiates player with data provided.
 func instantiate_player(outfit_number, controls_number, spawn_position: Vector2) -> Player:
@@ -341,12 +356,12 @@ func _on_back_to_menu_pressed() -> void:
 func _on_player_tag_changed() -> void:
 	for i in bomb_indicators.size():
 		bomb_indicators[i].visible = players[i] != null and players[i].IS_TAGGER
+	match_node.get_child(1).screen_shake(1, 0.25)
 
 func _on_back_from_controls_pressed() -> void:
 	anims.play_backwards("controls")
 	start.grab_focus()
 
 func _on_controls_pressed() -> void:
-	print("here")
 	anims.play("controls")
 	back_from_controls.grab_focus()

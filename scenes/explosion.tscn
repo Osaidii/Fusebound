@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://tyk4ukbrhgg8"]
+
+[ext_resource type="AudioStream" uid="uid://dihvqslnc2hcw" path="res://assets/sounds/explosion.mp3" id="1_17npe"]
+
+[sub_resource type="Gradient" id="Gradient_3oo6d"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0.2611607, 0.5870536, 0.64508927, 1)
+colors = PackedColorArray(1, 0.31764707, 0, 1, 1, 0.627451, 0.07450981, 0.9254902, 1, 0.6, 0, 1, 0.13464907, 0.1346491, 0.13464904, 0)
+
+[sub_resource type="Curve" id="Curve_17npe"]
+_limits = [0.0, 200.0, 0.0, 1.0]
+_data = [Vector2(0, 73.600006), 0.0, -485.00522, 0, 1, Vector2(0.15175095, 0), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[node name="Explosion" type="CPUParticles2D" unique_id=983947241]
+emitting = false
+amount = 20
+lifetime = 0.35000000000000003
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+direction = Vector2(1, 0.245)
+spread = 180.0
+gravity = Vector2(0, 50)
+initial_velocity_min = 80.0
+initial_velocity_max = 80.0
+damping_min = 4.0
+damping_max = 6.0
+scale_amount_min = 4.0
+scale_amount_max = 7.0
+color_ramp = SubResource("Gradient_3oo6d")
+hue_variation_min = -0.1
+hue_variation_max = 0.3
+anim_speed_curve = SubResource("Curve_17npe")
+
+[node name="Explosion Sound" type="AudioStreamPlayer2D" parent="." unique_id=480636937]
+stream = ExtResource("1_17npe")
+autoplay = true
+bus = &"SFX"

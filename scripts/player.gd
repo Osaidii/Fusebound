@@ -1,6 +1,8 @@
 class_name Player
 extends CharacterBody2D
 
+const DUST = preload("uid://ba2qsocmdglqb")
+
 @export_category("Instance")
 @export var CONTROLS := 1
 @export var OUTFIT := 1
@@ -117,6 +119,9 @@ func jump() -> void:
 	velocity.y = JUMP_VELOCITY
 	coyote_timer.stop()
 	coyote_time_activated = true
+	var instance = DUST.instantiate()
+	instance.global_position.y = 2
+	instance.global_position.x = -2
 
 # This function flips sprite based on direction.
 func _face_direction() -> void:
