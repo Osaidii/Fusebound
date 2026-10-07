@@ -949,12 +949,12 @@ shape = SubResource("RectangleShape2D_k1lxp")
 
 [node name="Coyote Timer" type="Timer" parent="." unique_id=1803603861]
 unique_name_in_owner = true
-wait_time = 0.1
+wait_time = 0.2
 one_shot = true
 
 [node name="Jump Buffer timer" type="Timer" parent="." unique_id=2016507137]
 unique_name_in_owner = true
-wait_time = 0.1
+wait_time = 0.2
 one_shot = true
 
 [node name="Hitbox Cooldown Timer" type="Timer" parent="." unique_id=728424113]

@@ -10,9 +10,12 @@ config_version=5
 
 [application]
 
-config/name="Snowglobe"
+config/name="Fusebound 1.0"
+config/description="A Tag Game"
+config/version="1.0"
 run/main_scene="uid://daof72gx7ckp5"
 config/features=PackedStringArray("4.7", "Mobile")
+config/icon="uid://x3ywejq31nq5"
 
 [audio]
 
@@ -22,6 +25,7 @@ buses/default_bus_layout="uid://c3gl7tyqfkuie"
 
 Transition="*uid://vjpt4sogrvwh"
 Music="*uid://7ie6bfslefrk"
+Saveload="*uid://0bovc1p070fy"
 
 [display]
 

@@ -7,8 +7,8 @@ const DUST = preload("uid://ba2qsocmdglqb")
 @export var CONTROLS := 1
 @export var OUTFIT := 1
 @export_category("Stats")
-@export var NORMAL_SPEED := 100
-@export var TAGGER_SPEED := 130
+@export var NORMAL_SPEED := 90
+@export var TAGGER_SPEED := 115
 @export var JUMP_VELOCITY := -240.0
 @export_category("Data")
 @export var CAN_CONTROL := false
@@ -63,6 +63,7 @@ func _physics_process(delta: float) -> void:
 		jump_buffer_timer.start()
 	if is_on_floor() and !jump_buffer_timer.is_stopped():
 		jump()
+		jump_buffer_timer.stop()
 	elif velocity.y < 0.0:
 		if CONTROLS == 1 and Input.is_action_just_released("up1"):
 			velocity.y *= 0.5
