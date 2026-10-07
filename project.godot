@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Fusebound 1.0"
 config/description="A Tag Game"
-config/version="1.0"
+config/version="1.1"
 run/main_scene="uid://daof72gx7ckp5"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="uid://x3ywejq31nq5"
@@ -145,3 +145,4 @@ right6={
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
