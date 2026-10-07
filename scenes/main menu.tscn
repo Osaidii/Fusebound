@@ -821,7 +821,6 @@ scale = Vector2(0.63, 0.63)
 focus_neighbor_left = NodePath("../../../Back")
 focus_neighbor_top = NodePath("../../Limit FPS/Limit Button")
 focus_neighbor_bottom = NodePath("../../Master Volume/Slider")
-disabled = true
 selected = 1
 item_count = 5
 popup/item_0/text = "30"

@@ -49,7 +49,6 @@ func _ready() -> void:
 	bomb_indicators = [b_1, b_2, b_3, b_4, b_5, b_6]
 	win_indicators = [w_1, w_2, w_3, w_4, w_5, w_6]
 
-
 # This function updates the timer.
 func update_timer(number) -> void:
 	timer_text.text = str(number)
@@ -71,6 +70,7 @@ func random_bomb() -> void:
 	bomb_indicators[index].visible = true
 	death_timer.start()
 	anims.play("timer")
+	anims.seek(0.0, true)
 
 # This function kills a player.
 func kill_player(player) -> void:
@@ -133,10 +133,9 @@ func start_match() -> void:
 	for p in get_living_players():
 		p.CAN_CONTROL = true
 	match_running = true
-	random_bomb()
 	bomb_text.visible = true
 	timer_text.visible = true
-
+	random_bomb()
 
 # This function instatiates player with data provided.
 func instantiate_player(outfit_number, controls_number, spawn_position: Vector2) -> Player:
